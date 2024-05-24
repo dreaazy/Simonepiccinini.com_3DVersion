@@ -1,23 +1,45 @@
-import logo from "./logo.svg";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import { PlanetScene, HeadScene, Navbar } from "./components";
+import {
+  PlanetScene,
+  HeadScene,
+  Navbar,
+  Hero,
+  Tech,
+  Contact,
+  Experience
+} from "./components";
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <div
-        className="App"
-        style={{ position: "relative", width: "50vw", height: "50vh" }}
-      >
-        <PlanetScene />
+    <div className="relative z-0 bg-primary">
+      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <Navbar />
       </div>
 
-      
-        <HeadScene />
-      
-    </>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <>
+              <Hero />
+              {/* Uncomment these components as needed */}
+              {/* <About /> */}
+              <Experience />
+             {/*  <Tech />
+              <Works />
+              <Feedbacks /> */}
+            </>
+          }
+        />       
+      </Routes>
+
+
+      <Contact />
+
+    </div>
   );
 }
 

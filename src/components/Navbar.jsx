@@ -13,26 +13,24 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(scrollTop > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    // Update active state based on location pathname
+    setActive(location.pathname);
+  }, [location]);
 
   // Check if the current URL is "/program"
   const isProgramPage = location.pathname === "/program";
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -52,37 +50,19 @@ const Navbar = () => {
           </p>
         </Link>
 
-        {/* Conditional rendering based on the URL */}
-        {isProgramPage ? (
-          <ul className="list-none flex flex-row gap-10">
-            {navLinks.map((nav) => (
-              <li
-                key={nav.id}
-                className={`${
-                  active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <ul className="list-none flex flex-row gap-10">
-            {/* Render different navbar items for pages other than "/program" */}
-            {navLinks.slice(0, 3).map((nav) => (
-              <li
-                key={nav.id}
-                className={`${
-                  active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
-        )}
+        <ul className="list-none flex flex-row gap-10">
+          {navLinks.slice(0, isProgramPage ? navLinks.length : 3).map((nav) => (
+            <li
+              key={nav.id}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav.title)}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
 
         {/* Mobile menu */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -92,7 +72,6 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
-
           <div
             className={`${
               !toggle ? "hidden" : "flex"

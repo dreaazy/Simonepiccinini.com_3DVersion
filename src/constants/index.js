@@ -1,4 +1,4 @@
-/* import {
+import {
     mobile,
     backend,
     creator,
@@ -24,7 +24,7 @@
     tripguide,
     threejs,
 } from "../assets";
- */
+
 export const navLinks = [
     {
         id: "program",
