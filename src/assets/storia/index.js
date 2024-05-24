@@ -12,26 +12,24 @@ import sto_11 from "./storia_11.jpg";
 import sto_12 from "./storia_12.jpg";
 import sto_13 from "./storia_13.jpg";
 import sto_14 from "./storia_14.jpg";
-import sto_14 from "./storia_15.jpg";
-import sto_14 from "./storia_16.jpg";
-
-
+import sto_15 from "./storia_15.jpg";
+import sto_16 from "./storia_16.jpg";
 
 export {
-    sto_1,
-    sto_2,
-    sto_3,
-    sto_4,
-    sto_5,
-    sto_6,
-    sto_7,
-    sto_8,
-    sto_9,
-    sto_10,
-    sto_11,
-    sto_12,
-    sto_13,
-    sto_14,
-    sto_15,
-    sto_16
+  sto_1,
+  sto_2,
+  sto_3,
+  sto_4,
+  sto_5,
+  sto_6,
+  sto_7,
+  sto_8,
+  sto_9,
+  sto_10,
+  sto_11,
+  sto_12,
+  sto_13,
+  sto_14,
+  sto_15,
+  sto_16,
 };

@@ -32,8 +32,12 @@ import tripguide from "./tripguide.png";
 
 import LogoWeb from "./logoweb.svg";
 
+import { sto_1 } from "./storia";
+
 export {
-/*   logo, */
+  sto_1,
+
+  
   backend,
   creator,
   mobile,

@@ -11,6 +11,11 @@ import {
   Experience
 } from "./components";
 
+
+import { Pcto, Program } from "./pages";
+
+
+
 function App() {
   return (
     <div className="relative z-0 bg-primary">
@@ -28,12 +33,30 @@ function App() {
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               <Experience />
-             {/*  <Tech />
+              {/*  <Tech />
               <Works />
               <Feedbacks /> */}
             </>
           }
-        />       
+        />
+
+        {/* <Route
+          path="/pcto"
+          element={
+            <>
+              <Pcto />
+            </>
+          }
+        /> */}
+
+        <Route
+          path="/program"
+          element={
+            <>
+              <Program />
+            </>
+          }
+        />
       </Routes>
 
 

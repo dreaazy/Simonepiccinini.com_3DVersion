@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    sto_1
 } from "../assets";
 
 export const navLinks = [
@@ -321,7 +322,7 @@ const storia = {
                         "Il sindacalismo operaio è emerso come una forza significativa nel panorama politico ed economico del periodo. I lavoratori si sono organizzati in sindacati per difendere i propri diritti e migliorare le condizioni lavorative. Questo movimento ha giocato un ruolo importante nel promuovere riforme sociali e nell'affermare i diritti dei lavoratori all'interno delle società industrializzate.",
                 },
             ],
-            img: "src/assets/storia/storia_1.jpg",
+            img: sto_1,
         },
         {
             capitolo: 2,
