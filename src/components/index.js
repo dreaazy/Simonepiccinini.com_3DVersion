@@ -1,4 +1,7 @@
 import { PlanetScene } from './canvas';
 import { HeadScene } from './canvas';
 
-export { PlanetScene, HeadScene };
+
+import Navbar from "./Navbar";
+
+export { Navbar,PlanetScene, HeadScene };
