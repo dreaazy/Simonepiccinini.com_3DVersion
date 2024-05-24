@@ -19,6 +19,8 @@ import { Pcto, Program } from "./pages";
 function App() {
   return (
     <div className="relative z-0 bg-primary">
+
+
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
       </div>
@@ -30,6 +32,7 @@ function App() {
           element={
             <>
               <Hero />
+   
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               <Experience />
