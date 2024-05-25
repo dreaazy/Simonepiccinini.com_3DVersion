@@ -1,6 +1,6 @@
 import ita_1 from "./italiano_1.jpg";
 import ita_2 from "./italiano_2.jpg";
-import ita_3 from "./italiano_3.jpg";
+import ita_3 from "./italiano_3.jpeg";
 import ita_4 from "./italiano_4.jpg";
 import ita_5 from "./italiano_5.jpg";
 import ita_6 from "./italiano_6.jpg";

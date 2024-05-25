@@ -32,12 +32,86 @@ import tripguide from "./tripguide.png";
 
 import LogoWeb from "./logoweb.svg";
 
-import { sto_1 } from "./storia";
+import {
+  sto_1,
+  sto_2,
+  sto_3,
+  sto_4,
+  sto_5,
+  sto_6,
+  sto_7,
+  sto_8,
+  sto_9,
+  sto_10,
+  sto_11,
+  sto_12,
+  sto_13,
+  sto_14,
+  sto_15,
+  sto_16,
+} from "./storia";
+
+import {
+
+  ita_1,
+  ita_2,
+  ita_3,
+  ita_4,
+  ita_5,
+  ita_6,
+  ita_7,
+  ita_8,
+  ita_9,
+  ita_10,
+  ita_11,
+  ita_12,
+  ita_13,
+  ita_14,
+
+} from "./italiano";
+
+
+import {
+
+  english4u
+  
+} from "./projects";
 
 export {
   sto_1,
+  sto_2,
+  sto_3,
+  sto_4,
+  sto_5,
+  sto_6,
+  sto_7,
+  sto_8,
+  sto_9,
+  sto_10,
+  sto_11,
+  sto_12,
+  sto_13,
+  sto_14,
+  sto_15,
+  sto_16,
 
-  
+  ita_1,
+  ita_2,
+  ita_3,
+  ita_4,
+  ita_5,
+  ita_6,
+  ita_7,
+  ita_8,
+  ita_9,
+  ita_10,
+  ita_11,
+  ita_12,
+  ita_13,
+  ita_14,
+
+  english4u,
+
   backend,
   creator,
   mobile,
@@ -65,5 +139,5 @@ export {
   carrent,
   jobit,
   tripguide,
-  LogoWeb
+  LogoWeb,
 };

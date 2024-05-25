@@ -11,8 +11,11 @@ import CanvasLoader from "./Loader"; */
 /* 
 import Pcto from "./Pcto"; */
 import Program from "./Program";
+import Projects from "./Projects";
+import ErrorPage from "./ErrorPage";
 
 export {
-
+  Projects,
   Program,
+  ErrorPage
 };

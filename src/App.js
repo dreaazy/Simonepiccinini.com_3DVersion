@@ -8,19 +8,15 @@ import {
   Hero,
   Tech,
   Contact,
-  Experience
+  Experience,
 } from "./components";
 
-
-import { Pcto, Program } from "./pages";
-
-
+import { Pcto, Program, Projects, ErrorPage} from "./pages";
+import ProjectDetail from "./components/ProjectDetail"; // Import the ProjectDetail component
 
 function App() {
   return (
     <div className="relative z-0 bg-primary">
-
-
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
       </div>
@@ -32,7 +28,7 @@ function App() {
           element={
             <>
               {/* <Hero /> */}
-   
+
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               <Experience />
@@ -60,11 +56,25 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="/projects"
+          element={
+            <>
+              <Projects />
+            </>
+          }
+        />
+
+        <Route path="/projects/:projectName" element={<ProjectDetail />} />
+
+        <Route
+          path="*"
+          element={<ErrorPage errorCode="404" errorMessage="Page Not Found" />}
+        />
       </Routes>
 
-
       <Contact />
-
     </div>
   );
 }

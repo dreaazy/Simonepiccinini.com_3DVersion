@@ -1,7 +1,8 @@
+// Navbar.jsx
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { baseNavLinks, conditionalNavLinks } from "../constants";
 import { LogoWeb, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -21,12 +22,14 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    // Update active state based on location pathname
     setActive(location.pathname);
   }, [location]);
 
-  // Check if the current URL is "/program"
-  const isProgramPage = location.pathname === "/program";
+  // Get additional links based on the current location
+  const additionalLinks = conditionalNavLinks[location.pathname] || [];
+
+  // Combine base links and additional links
+  const navLinks = [...baseNavLinks, ...additionalLinks];
 
   return (
     <nav
@@ -52,15 +55,19 @@ const Navbar = () => {
 
         {/* Links for larger screens */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.slice(0, isProgramPage ? navLinks.length : 3).map((nav) => (
+          {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.id ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => setActive(nav.id)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {baseNavLinks.some(link => link.id === nav.id) ? (
+                <Link to={`/${nav.id}`}>{nav.title}</Link>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -83,14 +90,18 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.id ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    setActive(nav.id);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {baseNavLinks.some(link => link.id === nav.id) ? (
+                    <Link to={`/${nav.id}`}>{nav.title}</Link>
+                  ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  )}
                 </li>
               ))}
             </ul>
