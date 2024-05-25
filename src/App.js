@@ -31,7 +31,7 @@ function App() {
           path="/"
           element={
             <>
-              <Hero />
+              {/* <Hero /> */}
    
               {/* Uncomment these components as needed */}
               {/* <About /> */}

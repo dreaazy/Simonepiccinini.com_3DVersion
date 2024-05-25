@@ -50,7 +50,8 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none flex flex-row gap-10">
+        {/* Links for larger screens */}
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.slice(0, isProgramPage ? navLinks.length : 3).map((nav) => (
             <li
               key={nav.id}
