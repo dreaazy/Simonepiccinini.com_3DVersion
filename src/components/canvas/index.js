@@ -1,4 +1,8 @@
+import HeadScene from './HeadScene';
 
-export { default as PlanetScene } from './PlanetScene';
-export { default as HeadScene } from './HeadScene';
+import EarthCanvas from "./Earth";
+import StarsCanvas from "./Stars";
 
+
+
+export { EarthCanvas, StarsCanvas, HeadScene };

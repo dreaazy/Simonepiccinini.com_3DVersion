@@ -10,6 +10,7 @@ import {
   Contact,
   Experience,
   TopicDetail,
+  StarsCanvas
 } from "./components";
 
 import { Pcto, Program, Projects, ErrorPage } from "./pages";
@@ -29,11 +30,11 @@ function App() {
           path="/"
           element={
             <>
-              {/* <Hero /> */}
+              <Hero />
 
               {/* Uncomment these components as needed */}
               {/* <About /> */}
-              <Experience />
+              {/* <Experience /> */}
               {/*  <Tech />
               <Works />
               <Feedbacks /> */}
@@ -74,7 +75,7 @@ function App() {
           path="/program/:type/:title"
           element={
             <>
-              <TopicDetail  />
+              <TopicDetail />
             </>
           }
         />
@@ -85,7 +86,11 @@ function App() {
         />
       </Routes>
 
-      <Contact />
+      <div className="relative z-0">
+        <Contact />
+        <StarsCanvas />
+      </div>
+
     </div>
   );
 }

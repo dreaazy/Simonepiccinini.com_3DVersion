@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { storia, italiano } from "../constants";
 
 const TopicDetail = () => {

@@ -1,5 +1,4 @@
-import { PlanetScene } from './canvas';
-import { HeadScene } from './canvas';
+import { EarthCanvas, StarsCanvas, HeadScene} from './canvas';
 
 
 import Navbar from "./Navbar";
@@ -8,9 +7,7 @@ import Tech from "./Tech";
 import Contact from "./Contact";
 import Experience from "./Experience";
 import ProjectCard from "./ProjectCard";
-
 import ProjectDetail from "./ProjectDetail";
-
 import TopicDetail from "./TopicDetail";
 
-export { Navbar,PlanetScene, HeadScene, Hero, Tech, Contact, Experience, ProjectCard, TopicDetail, ProjectDetail};
+export { Navbar,EarthCanvas, HeadScene, Hero, Tech, Contact, Experience, ProjectCard, TopicDetail, ProjectDetail, StarsCanvas};
