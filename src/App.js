@@ -9,9 +9,11 @@ import {
   Tech,
   Contact,
   Experience,
+  TopicDetail,
 } from "./components";
 
-import { Pcto, Program, Projects, ErrorPage} from "./pages";
+import { Pcto, Program, Projects, ErrorPage } from "./pages";
+
 import ProjectDetail from "./components/ProjectDetail"; // Import the ProjectDetail component
 
 function App() {
@@ -67,6 +69,15 @@ function App() {
         />
 
         <Route path="/projects/:projectName" element={<ProjectDetail />} />
+
+        <Route
+          path="/program/:type/:title"
+          element={
+            <>
+              <TopicDetail  />
+            </>
+          }
+        />
 
         <Route
           path="*"

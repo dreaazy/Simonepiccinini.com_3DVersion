@@ -9,4 +9,8 @@ import Contact from "./Contact";
 import Experience from "./Experience";
 import ProjectCard from "./ProjectCard";
 
-export { Navbar,PlanetScene, HeadScene, Hero, Tech, Contact, Experience, ProjectCard};
+import ProjectDetail from "./ProjectDetail";
+
+import TopicDetail from "./TopicDetail";
+
+export { Navbar,PlanetScene, HeadScene, Hero, Tech, Contact, Experience, ProjectCard, TopicDetail, ProjectDetail};
