@@ -1,4 +1,4 @@
-import {
+/* import {
     mobile,
     backend,
     creator,
@@ -24,7 +24,10 @@ import {
     tripguide,
     threejs,
     sto_1
-} from "../assets";
+} from "../assets"; */
+import * as assets from   "../assets";
+
+
 
 export const navLinks = [
     {
@@ -52,78 +55,78 @@ export const navLinks = [
 const services = [
     {
         title: "Web Developer",
-        icon: web,
+        icon: assets.web,
     },
     {
         title: "React Native Developer",
-        icon: mobile,
+        icon: assets.mobile,
     },
     {
         title: "Backend Developer",
-        icon: backend,
+        icon: assets.backend,
     },
     {
         title: "Content Creator2",
-        icon: creator,
+        icon: assets.creator,
     },
     {
         title: "Content Creator",
-        icon: creator,
+        icon: assets.creator,
     },
 ];
 
 const technologies = [
     {
         name: "HTML 5",
-        icon: html,
+        icon: assets.html,
     },
     {
         name: "CSS 3",
-        icon: css,
+        icon: assets.css,
     },
     {
         name: "JavaScript",
-        icon: javascript,
+        icon: assets.javascript,
     },
     {
         name: "TypeScript",
-        icon: typescript,
+        icon: assets.typescript,
     },
     {
         name: "React JS",
-        icon: reactjs,
+        icon: assets.reactjs,
     },
     {
         name: "Redux Toolkit",
-        icon: redux,
+        icon: assets.redux,
     },
     {
         name: "Tailwind CSS",
-        icon: tailwind,
+        icon: assets.tailwind,
     },
     {
         name: "Node JS",
-        icon: nodejs,
+        icon: assets.nodejs,
     },
     {
         name: "MongoDB",
-        icon: mongodb,
+        icon: assets.mongodb,
     },
     {
         name: "Three JS",
-        icon: threejs,
+        icon: assets.threejs,
     },
     {
         name: "git",
-        icon: git,
+        icon: assets.git,
     },
     {
         name: "figma",
-        icon: figma,
+        icon: assets.figma,
     },
     {
         name: "docker",
-        icon: docker,
+        icon: assets.docker,
     },
 ];
 
@@ -131,7 +134,7 @@ const experiences = [
     {
         title: "First Year",
         company_name: "Click To Explore",
-        icon: starbucks,
+        icon: assets.starbucks,
         iconBg: "#383E56",
         date: "March 2020 - April 2021",
         points: [
@@ -145,7 +148,7 @@ const experiences = [
     {
         title: "Second Year",
         company_name: "Click To Explore",
-        icon: tesla,
+        icon: assets.tesla,
         iconBg: "#E6DEDD",
         date: "Jan 2021 - Feb 2022",
         points: [
@@ -159,7 +162,7 @@ const experiences = [
     {
         title: "Third Year",
         company_name: "Click To Explore",
-        icon: shopify,
+        icon: assets.shopify,
         iconBg: "#383E56",
         date: "Jan 2022 - Jan 2023",
         points: [
@@ -173,7 +176,7 @@ const experiences = [
     {
         title: "Fourth Year",
         company_name: "Click To Explore",
-        icon: meta,
+        icon: assets.meta,
         iconBg: "#E6DEDD",
         date: "Jan 2023 - Present",
         points: [
@@ -187,7 +190,7 @@ const experiences = [
     {
         title: "Fifth Year",
         company_name: "Click To Explore",
-        icon: meta,
+        icon: assets.meta,
         iconBg: "#E6DEDD",
         date: "Jan 2023 - Present",
         points: [
@@ -246,7 +249,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: assets.carrent,
         source_code_link: "https://github.com/",
     },
     {
@@ -267,7 +270,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: assets.jobit,
         source_code_link: "https://github.com/",
     },
     {
@@ -288,10 +291,11 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: assets.tripguide,
         source_code_link: "https://github.com/",
     },
 ];
+
 
 const storia = {
     nome: "Storia",
@@ -322,7 +326,7 @@ const storia = {
                         "Il sindacalismo operaio è emerso come una forza significativa nel panorama politico ed economico del periodo. I lavoratori si sono organizzati in sindacati per difendere i propri diritti e migliorare le condizioni lavorative. Questo movimento ha giocato un ruolo importante nel promuovere riforme sociali e nell'affermare i diritti dei lavoratori all'interno delle società industrializzate.",
                 },
             ],
-            img: sto_1,
+            img: assets.sto_1,
         },
         {
             capitolo: 2,
@@ -344,7 +348,7 @@ const storia = {
                         "Nel periodo all'incirca dell'inizio del XX secolo, gli Stati Uniti stavano emergendo come una potenza mondiale. Con una rapida crescita economica, espansione territoriale e ambizioni imperiali, gli USA stavano acquisendo un ruolo sempre più influente sulla scena internazionale, sfidando le potenze europee tradizionali.",
                 },
             ],
-            img: "src/assets/storia/storia_2.jpg",
+            img: assets.sto_2,
         },
         {
             capitolo: 3,
@@ -381,7 +385,7 @@ const storia = {
                         "La stagione giolittiana è giunta al termine a causa di una serie di crisi politiche ed economiche, tra cui la guerra di Libia e lo scoppio della Prima Guerra Mondiale. Questi eventi hanno segnato la fine del governo di Giolitti e l'inizio di un periodo di instabilità politica e conflitto sociale in Italia.",
                 },
             ],
-            img: "src/assets/storia/storia_3.jpg",
+            img: assets.sto_3,
         },
         {
             capitolo: 4,
@@ -433,7 +437,7 @@ const storia = {
                         "La Prima Guerra Mondiale si concluse con la firma dell'Armistizio di Compiègne nel novembre 1918. Questo segnò la sconfitta delle Potenze Centrali e la vittoria degli Alleati, ma lasciò dietro di sé un bilancio di distruzione, morte e instabilità politica che avrebbe avuto profonde conseguenze per gli anni a venire.",
                 },
             ],
-            img: "src/assets/storia/storia_4.jpg",
+            img: assets.sto_4,
         },
         {
             capitolo: 5,
@@ -465,7 +469,7 @@ const storia = {
                         "Il dopoguerra vide un crescente movimento nazionalista in India, che cercava l'indipendenza dal dominio coloniale britannico. Leader come Mahatma Gandhi guidarono campagne di disobbedienza civile e resistenza non violenta contro il governo coloniale, portando gradualmente all'indipendenza dell'India nel 1947.",
                 },
             ],
-            img: "src/assets/storia/storia_5.jpg",
+            img: assets.sto_5,
         },
         {
             capitolo: 6,
@@ -502,7 +506,7 @@ const storia = {
                         "La vittoria italiana nella Prima Guerra Mondiale fu considerata 'mutilata' a causa della mancata ottenimento di alcuni territori promessi nel Patto di Londra. Questo generò un sentimento di frustrazione e scontento nella popolazione, che si manifestò nel 'biennio rosso' (1919-1920), un periodo di intensa agitazione sociale e conflitto politico caratterizzato da scioperi, occupazioni di fabbriche e scontri di strada.",
                 },
             ],
-            img: "src/assets/storia/storia_6.jpg",
+            img: assets.sto_6,
         },
         {
             capitolo: 7,
@@ -559,7 +563,7 @@ const storia = {
                         "Le leggi razziali fasciste del 1938 introdussero discriminazioni legali contro gli ebrei in Italia, limitando i loro diritti civili, professionali ed economici. Queste leggi segnarono un'inversione della politica precedente del regime nei confronti degli ebrei e furono il preludio alla persecuzione e alla deportazione degli ebrei italiani durante la Seconda Guerra Mondiale.",
                 },
             ],
-            img: "src/assets/storia/storia_7.jpg",
+            img: assets.sto_7,
         },
         {
             capitolo: 8,
@@ -587,7 +591,7 @@ const storia = {
                         "Il New Deal segnò un cambiamento significativo nel ruolo dello Stato nell'economia americana, con un maggiore intervento governativo per stabilizzare l'economia e proteggere i cittadini dalla povertà e dalla disoccupazione. Il governo federale assunse un ruolo attivo nel regolare l'attività economica, nel promuovere la riforma sociale e nel fornire servizi pubblici.",
                 },
             ],
-            img: "src/assets/storia/storia_8.jpg",
+            img: assets.sto_8,
         },
         {
             capitolo: 9,
@@ -624,7 +628,7 @@ const storia = {
                         "Il terrore staliniano fu una campagna di repressione politica e sociale attuata dal regime di Stalin per eliminare gli oppositori politici e consolidare il suo potere. Questa campagna comprendeva arresti di massa, processi politici farsa, deportazioni, lavori forzati nei gulag e esecuzioni sommarie, con milioni di vittime.",
                 },
             ],
-            img: "src/assets/storia/storia_9.jpg",
+            img: assets.sto_9,
         },
         {
             capitolo: 10,
@@ -656,7 +660,7 @@ const storia = {
                         "L'antisemitismo fu un pilastro fondamentale dell'ideologia nazista e della politica del Terzo Reich. Basato su pregiudizi storici, culturali e razziali, l'antisemitismo nazista portò alla persecuzione sistematica degli ebrei, culminando nell'Olocausto, durante il quale milioni di ebrei furono perseguitati, imprigionati e uccisi nei campi di concentramento.",
                 },
             ],
-            img: "src/assets/storia/storia_10.jpg",
+            img: assets.sto_10,
         },
         {
             capitolo: 11,
@@ -678,7 +682,7 @@ const storia = {
                         "Gli eventi degli anni '30, tra cui la politica aggressiva di Hitler, il riarmo tedesco, le tensioni internazionali e i conflitti regionali come la guerra civile spagnola, crearono le premesse per lo scoppio di un nuovo conflitto mondiale. Il mondo si trovava sull'orlo della catastrofe.",
                 },
             ],
-            img: "src/assets/storia/storia_11.jpg",
+            img: assets.sto_11,
         },
         {
             capitolo: 12,
@@ -726,7 +730,7 @@ const storia = {
                         "L'uso delle bombe atomiche su Hiroshima e Nagasaki da parte degli Stati Uniti nel agosto 1945 portò alla resa del Giappone, segnando la fine della Seconda Guerra Mondiale nel teatro del Pacifico. Questi eventi ebbero un impatto duraturo sulla storia mondiale e sulle politiche di sicurezza internazionale.",
                 },
             ],
-            img: "src/assets/storia/storia_12.jpg",
+            img: assets.sto_12,
         },
         {
             capitolo: 13,
@@ -754,7 +758,7 @@ const storia = {
                         "Dopo l'armistizio dell'8 settembre 1943, l'Italia fu occupata dalle forze tedesche nella parte settentrionale e centrale del Paese, mentre la parte meridionale passò sotto il controllo delle forze alleate. Questo periodo fu caratterizzato da repressione, resistenza e lotta per la liberazione.",
                 },
             ],
-            img: "src/assets/storia/storia_13.jpg",
+            img: assets.sto_13,
         },
         {
             capitolo: 14,
@@ -786,7 +790,7 @@ const storia = {
                         "Dopo la Seconda Guerra Mondiale, molte colonie in Africa, Asia e America Latina ottennero l'indipendenza dai loro colonizzatori europei. Questo processo, noto come decolonizzazione, portò a profondi cambiamenti politici, sociali ed economici nel mondo.",
                 },
             ],
-            img: "src/assets/storia/storia_14.jpg",
+            img: assets.sto_14,
         },
         {
             capitolo: 15,
@@ -818,7 +822,7 @@ const storia = {
                         "La guerra del Vietnam fu uno dei conflitti più divisivi e traumatici degli anni '60 e '70. Coinvolgendo gli Stati Uniti come parte della loro politica di contenimento del comunismo, la guerra vide il coinvolgimento di forze vietnamite comuniste e la resistenza da parte dei ribelli vietnamiti del Sud.",
                 },
             ],
-            img: "src/assets/storia/storia_15.jpg",
+            img: assets.sto_15,
         },
         {
             capitolo: 16,
@@ -850,7 +854,7 @@ const storia = {
                         "Negli anni '50 e '60, l'Italia visse un periodo di rapida crescita economica noto come il miracolo economico. Grazie a politiche di sviluppo industriale, investimenti pubblici e integrazione europea, l'Italia divenne una delle principali potenze economiche mondiali.",
                 },
             ],
-            img: "src/assets/storia/storia_16.jpg",
+            img: assets.sto_16,
         },
     ],
 };
