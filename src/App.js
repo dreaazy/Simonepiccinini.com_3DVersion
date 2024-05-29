@@ -35,6 +35,7 @@ function App() {
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               {/* <Experience /> */}
+             {/*  <Experience /> */}
               {/*  <Tech />
               <Works />
               <Feedbacks /> */}
