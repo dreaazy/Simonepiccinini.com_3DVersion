@@ -18,14 +18,20 @@ const TopicDetail = () => {
   }
 
   return (
-    <motion.section className={`sm:px-16 px-6  sm:py-16 md:pt-32 py-16 max-w-7xl mx-auto relative z-0`}>
+    <motion.section className={`sm:px-16 px-6 sm:py-16 md:pt-32 py-16 max-w-7xl mx-auto relative z-0`}>
       <h2 className="text-white font-bold text-[32px]">{argomento.titolo}</h2>
       <div className="relative w-full h-[500px] mb-10">
         <img src={argomento.img} alt={argomento.titolo} className="w-full h-full object-cover rounded-2xl" />
       </div>
+
+      {argomento.vita && (
+        <div className="mt-5 text-secondary">
+          <h3 className="text-2xl font-semibold mb-4">Vita</h3>
+          <p>{argomento.vita}</p>
+        </div>
+      )}
       
       <div className="mt-5">
-        
         {argomento.argomenti && (
           <ul className="mt-5 text-secondary">
             {argomento.argomenti.map((subArgomento, index) => (

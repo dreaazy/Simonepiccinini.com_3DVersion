@@ -1196,46 +1196,77 @@ const italiano = {
       img: assets.ita_4,
     },
     {
-      titolo: "Giovanni Pascoli",
-      argomenti: [
+      "titolo": "Giovanni Pascoli",
+      "vita": "Giovanni Pascoli (1855-1912) è stato un poeta e accademico italiano, uno dei maggiori esponenti della letteratura italiana del tardo Ottocento e del primo Novecento. Nato a San Mauro di Romagna (oggi San Mauro Pascoli), Pascoli ebbe un'infanzia segnata da tragedie familiari, inclusa l'uccisione del padre, un evento che influenzò profondamente la sua poesia. Studioso appassionato e docente universitario, Pascoli esplorò temi come l'infanzia, la natura, il lutto e la memoria, combinando un linguaggio semplice e diretto con una profondità emotiva e simbolica. La sua visione poetica, influenzata dalla filosofia del simbolismo e del decadentismo, enfatizza l'importanza delle piccole cose e dei sentimenti nascosti.",
+      "argomenti": [
         {
-          titolo: "Il Fanciullino",
-          spiegazione:
-            "Il Fanciullino è una raccolta di poesie di Giovanni Pascoli che esplora il tema dell'infanzia e la perdita dell'innocenza. Le poesie riflettono sui ricordi dell'infanzia e sull'ingenuità della giovinezza.",
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTza3r0ipK51oisyADHsMqJqI8b78rLxT2KH3yD5bCvzQ&s",
+          "titolo": "Il Fanciullino",
+          "spiegazione": "Il Fanciullino è una raccolta di poesie di Giovanni Pascoli che esplora il tema dell'infanzia e la perdita dell'innocenza. Le poesie riflettono sui ricordi dell'infanzia e sull'ingenuità della giovinezza. Secondo Pascoli, il poeta deve conservare dentro di sé il 'fanciullino', ovvero quella parte di sé che percepisce il mondo con meraviglia e stupore, capace di vedere oltre l'apparenza delle cose. Il fanciullino è simbolo di purezza e di una visione del mondo non contaminata dalla razionalità adulta. I temi fondamentali comprendono la nostalgia, la semplicità e l'importanza di mantenere una connessione con il proprio io interiore.",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTza3r0ipK51oisyADHsMqJqI8b78rLxT2KH3yD5bCvzQ&s",
+          "testi": [
+            {
+              "titolo": "Il Fanciullino - Estratto",
+              "testo": "È dentro noi un fanciullino che non solo ha brividi... È un fanciullino che continua a stupirsi del mondo."
+            }
+          ]
         },
         {
-          titolo: "Lavandare",
-          spiegazione:
-            "Lavandare è una poesia di Giovanni Pascoli che celebra il lavoro delle donne che lavano i panni nei fiumi. La poesia evoca immagini di semplicità e bellezza nella vita quotidiana.",
-          img: "https://www.libriantichionline.com/typo3temp/pics/78fa9027dc.jpg",
+          "titolo": "Lavandare",
+          "spiegazione": "Lavandare è una poesia di Giovanni Pascoli che celebra il lavoro delle donne che lavano i panni nei fiumi. La poesia evoca immagini di semplicità e bellezza nella vita quotidiana. Pascoli usa un linguaggio semplice e musicale per descrivere le donne al lavoro, evidenziando il loro ruolo nella comunità rurale e il loro legame con la natura. I temi fondamentali comprendono la dignità del lavoro, la comunione con la natura e la bellezza nascosta nelle attività quotidiane. Pascoli riesce a trasformare una scena di vita comune in un momento di riflessione poetica e armonia.",
+          "img": "https://www.libriantichionline.com/typo3temp/pics/78fa9027dc.jpg",
+          "testi": [
+            {
+              "titolo": "Lavandare - Estratto",
+              "testo": "Nei fiumi d'autunno, le donne lavavano, con mani e con schiene, i panni... cantavano piano, le lavandaie, con voci leggere come piume."
+            }
+          ]
         },
         {
-          titolo: "X Agosto",
-          spiegazione:
-            "X Agosto è una poesia di Giovanni Pascoli dedicata al ricordo della morte tragica di suo padre, avvenuta nell'agosto del 1867. La poesia esplora il tema del lutto e della perdita.",
-          img: "https://www.leggere-facile.it/wp-content/uploads/2018/08/x_agosto-700x400.jpg",
+          "titolo": "X Agosto",
+          "spiegazione": "X Agosto è una poesia di Giovanni Pascoli dedicata al ricordo della morte tragica di suo padre, avvenuta nell'agosto del 1867. La poesia esplora il tema del lutto e della perdita. Attraverso immagini simboliche e un tono malinconico, Pascoli esprime il dolore e l'ingiustizia della morte prematura, associandola a un evento cosmico come la pioggia di stelle cadenti di San Lorenzo. I temi fondamentali comprendono il dolore personale, l'ingiustizia della morte, la memoria e il legame con la figura paterna. Pascoli utilizza la natura come specchio delle sue emozioni interiori, creando un'atmosfera di tristezza e riflessione.",
+          "img": "https://www.leggere-facile.it/wp-content/uploads/2018/08/x_agosto-700x400.jpg",
+          "testi": [
+            {
+              "titolo": "X Agosto - Estratto",
+              "testo": "San Lorenzo, io lo so perché tanto di stelle per l'aria tranquilla arde e cade, perché sì gran pianto nel concavo cielo sfavilla."
+            }
+          ]
         },
         {
-          titolo: "Temporale",
-          spiegazione:
-            "Temporale è una poesia di Giovanni Pascoli che descrive l'atmosfera e le emozioni durante un temporale estivo. La poesia evoca sensazioni di ansia e meraviglia di fronte alla potenza della natura.",
-          img: "https://www.meteo.expert/wp-content/uploads/2018/11/iStock_000028466382_Medium.jpg",
+          "titolo": "Temporale",
+          "spiegazione": "Temporale è una poesia di Giovanni Pascoli che descrive l'atmosfera e le emozioni durante un temporale estivo. La poesia evoca sensazioni di ansia e meraviglia di fronte alla potenza della natura. Pascoli utilizza immagini vivide e un ritmo incalzante per trasmettere l'immediatezza e l'intensità dell'evento naturale. I temi fondamentali comprendono la forza della natura, il timore reverenziale verso gli elementi naturali e l'inevitabile senso di piccolezza dell'uomo di fronte a tali fenomeni. La poesia mette in risalto la capacità della natura di evocare emozioni profonde e complesse.",
+          "img": "https://www.meteo.expert/wp-content/uploads/2018/11/iStock_000028466382_Medium.jpg",
+          "testi": [
+            {
+              "titolo": "Temporale - Estratto",
+              "testo": "Un bubbolìo lontano... Rosseggia l'orizzonte, come affocato, a mare; nero di pece, a monte; sembra voglia piovere e non piovere."
+            }
+          ]
         },
         {
-          titolo: "Novembre",
-          spiegazione:
-            "Novembre è una poesia di Giovanni Pascoli che riflette sull'autunno e sulle sue associazioni con la malinconia e la fine. La poesia evoca immagini di tristezza e desolazione.",
-          img: "https://maremosso.lafeltrinelli.it/media/qtlf0f2s/novembre_banner.jpg?anchor=center&mode=crop&width=1500&height=784&rnd=133432435363500000",
+          "titolo": "Novembre",
+          "spiegazione": "Novembre è una poesia di Giovanni Pascoli che riflette sull'autunno e sulle sue associazioni con la malinconia e la fine. La poesia evoca immagini di tristezza e desolazione. Pascoli usa il mese di novembre come metafora del declino e della morte, in contrasto con la primavera che simboleggia la rinascita e la speranza. I temi fondamentali comprendono la transitorietà della vita, la ciclicità delle stagioni e la riflessione sulla morte. Pascoli riesce a creare un'atmosfera di quieta tristezza, facendo emergere il senso di inevitabile passaggio del tempo.",
+          "img": "https://maremosso.lafeltrinelli.it/media/qtlf0f2s/novembre_banner.jpg?anchor=center&mode=crop&width=1500&height=784&rnd=133432435363500000",
+          "testi": [
+            {
+              "titolo": "Novembre - Estratto",
+              "testo": "Gèmmea l'aria, il sole così chiaro che tu ricerchi gli albicocchi in fiore, e del prunalbo l'odorino amaro senti nel cuore..."
+            }
+          ]
         },
         {
-          titolo: "Il lampo",
-          spiegazione:
-            "Il lampo è una poesia di Giovanni Pascoli che descrive l'esperienza di vedere un lampo nel cielo notturno. La poesia evoca sensazioni di meraviglia e incertezza di fronte alla brevità e all'imprevedibilità della vita.",
-          img: "https://www.gennarocucciniello.it/gc/wp-content/uploads/2015/11/lampo.jpg",
-        },
+          "titolo": "Il lampo",
+          "spiegazione": "Il lampo è una poesia di Giovanni Pascoli che descrive l'esperienza di vedere un lampo nel cielo notturno. La poesia evoca sensazioni di meraviglia e incertezza di fronte alla brevità e all'imprevedibilità della vita. Pascoli utilizza l'immagine del lampo per rappresentare momenti di illuminazione improvvisa e la fugacità delle emozioni e delle esperienze umane. I temi fondamentali comprendono la brevità della vita, l'epifania e il senso di mistero che circonda l'esistenza. La poesia, con la sua immagine potente e momentanea, invita alla riflessione sulla transitorietà della nostra percezione e delle nostre esperienze.",
+          "img": "https://www.gennarocucciniello.it/gc/wp-content/uploads/2015/11/lampo.jpg",
+          "testi": [
+            {
+              "titolo": "Il lampo - Estratto",
+              "testo": "E cielo e terra si mostrò qual era: la terra ansante, livida, in sussulto; il cielo ingombro, tragico, disfatto..."
+            }
+          ]
+        }
       ],
-      img: assets.ita_5,
+      "img": assets.ita_5
     },
     {
       titolo: "Gabriele D’Annunzio",
