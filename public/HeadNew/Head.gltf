@@ -1,0 +1,161 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.1.62",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "Testa",
+            "rotation": [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "scale": [
+                0.9837713241577148,
+                0.9837713241577148,
+                0.9837713241577148
+            ],
+            "translation": [
+                -1.9691107273101807,
+                0,
+                0
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "doubleSided": true,
+            "name": "aiStandardSurface2",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicRoughnessTexture": {
+                    "index": 1
+                },
+                "roughnessFactor": 0.5527864098548889
+            },
+            "normalTexture": {
+                "index": 2
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Mesh.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 168198,
+            "max": [
+                0.8826347589492798,
+                0.7576050758361816,
+                0.9984213709831238
+            ],
+            "min": [
+                -0.8139578700065613,
+                -0.9716564416885376,
+                -1.1460539102554321
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 168198,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 168198,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 993501,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2018376,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2018376,
+            "byteOffset": 2018376,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1345584,
+            "byteOffset": 4036752,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3974004,
+            "byteOffset": 5382336,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 9356340,
+            "uri": "untitled.bin"
+        }
+    ],
+    "images": [
+        {
+            "uri": "diffuse.1001.png"
+        },
+        {
+            "uri": "metal.1001.png"
+        },
+        {
+            "uri": "rough.1001.png"
+        }
+    ],
+    "textures": [
+        {
+            "source": 0
+        },
+        {
+            "source": 1
+        },
+        {
+            "source": 2
+        }
+    ]
+}

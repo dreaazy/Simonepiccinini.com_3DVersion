@@ -5,7 +5,7 @@ import CanvasLoader from "../Loader";
 
 
 const Head = ({ isMobile }) => {
-    const computer = useGLTF("./head/untitled.gltf");
+    const computer = useGLTF("./HeadNew/Head.gltf");
 
     return (
         <mesh>
@@ -19,13 +19,13 @@ const Head = ({ isMobile }) => {
                 castShadow
                 shadow-mapSize={1024}
             />
-            <pointLight position={[0, 0, 2]} intensity={5.5} /> // Adjusted position and reduced intensity
+            <pointLight position={[-1, -1, 3]} intensity={5.5} /> 
 
             <primitive
                 object={computer.scene}
-                scale={isMobile ? 150 : 200}
-                position={isMobile ? [0, 0, -2.2] : [0, 0, -1.5]}
-                rotation={[-0.01, -0.2, -0.1]}
+                scale={isMobile ? 1.7 : 2}
+                position={isMobile ? [0, 0, -2.2] : [4, 0, 0]}
+                rotation={[0, 0, 0]}
             />
         </mesh>
     );
@@ -66,6 +66,7 @@ const HeadScene = () => {
             <Suspense fallback={<CanvasLoader />}>
                 <OrbitControls
                     enableZoom={false}
+                    enablePan={false}
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
                 />
