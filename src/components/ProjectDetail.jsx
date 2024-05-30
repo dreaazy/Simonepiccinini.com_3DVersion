@@ -1,5 +1,4 @@
-// ProjectDetail.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
@@ -10,7 +9,34 @@ import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const ProjectDetail = () => {
   const { projectName } = useParams();
+  const [isLoading, setIsLoading] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(0);
   const project = projects.find((p) => p.name === projectName);
+
+  const totalImages = project?.images?.length || 0;
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 2000); // Simulate loading delay
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleImageLoad = () => {
+    setImagesLoaded((prev) => prev + 1);
+  };
+
+  useEffect(() => {
+    if (imagesLoaded === totalImages) {
+      setIsLoading(false);
+    }
+  }, [imagesLoaded, totalImages]);
+
+  if (isLoading) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner"></div>
+      </div>
+    );
+  }
 
   if (!project) {
     return <div>Project not found</div>;
@@ -72,7 +98,12 @@ const ProjectDetail = () => {
           <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {project.images.map((image, index) => (
               <div key={index} className="relative w-full h-[300px] p-5">
-                <img src={image.url} alt={`project_image_${index}`} className="w-full h-full object-cover rounded-2xl" />
+                <img
+                  src={image.url}
+                  alt={`project_image_${index}`}
+                  className="w-full h-full object-cover rounded-2xl"
+                  onLoad={handleImageLoad}
+                />
                 <p className="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white p-2 rounded">{image.text}</p>
               </div>
             ))}

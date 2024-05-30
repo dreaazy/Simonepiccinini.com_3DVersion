@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { storia, italiano } from "../constants";
 
 const TopicDetail = () => {
   const { type, title } = useParams();
+  const [isLoading, setIsLoading] = useState(true);
   let argomento;
 
   if (type === "italiano") {
     argomento = italiano.argomenti.find((a) => a.titolo === decodeURIComponent(title));
   } else if (type === "storia") {
     argomento = storia.argomenti.find((a) => a.titolo === decodeURIComponent(title));
+  }
+
+  useEffect(() => {
+    // Simulate loading process, you can replace it with actual loading logic
+    const timer = setTimeout(() => setIsLoading(false), 2000); // Adjust the timeout as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner"></div>
+      </div>
+    );
   }
 
   if (!argomento) {

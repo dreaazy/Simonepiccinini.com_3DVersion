@@ -11,3 +11,5 @@ import ProjectDetail from "./ProjectDetail";
 import TopicDetail from "./TopicDetail";
 
 export { Navbar,EarthCanvas, HeadScene, Hero, Tech, Contact, Experience, ProjectCard, TopicDetail, ProjectDetail, StarsCanvas};
+
+
