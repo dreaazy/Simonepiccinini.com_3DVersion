@@ -32,6 +32,8 @@ import tripguide from "./tripguide.png";
 
 import LogoWeb from "./logoweb.svg";
 
+
+
 import {
   sto_1,
   sto_2,
@@ -73,9 +75,24 @@ import {
 
 import {
 
-  english4u
+  english4u,
+  emotional_model,
+  la_bellezza_che_cura,
+  wechat
   
 } from "./projects";
+
+import {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+
+  
+} from "./hackaton";
+
 
 export {
   sto_1,
@@ -94,6 +111,13 @@ export {
   sto_14,
   sto_15,
   sto_16,
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
 
   ita_1,
   ita_2,
@@ -111,6 +135,9 @@ export {
   ita_14,
 
   english4u,
+  emotional_model,
+  la_bellezza_che_cura,
+  wechat,
 
   backend,
   creator,

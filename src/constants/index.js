@@ -1,54 +1,4 @@
-/* import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-    sto_1
-} from "../assets"; */
 import * as assets from "../assets";
-
-/* export const navLinks = [
-  {
-    id: "program",
-    title: "Program",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-  {
-    id: "italiano",
-    title: "Italiano",
-  },
-  {
-    id: "storia",
-    title: "Storia",
-  },
-]; */
 
 // constants.js or any configuration file
 export const baseNavLinks = [
@@ -61,7 +11,6 @@ export const baseNavLinks = [
     title: "projects",
   },
 ];
-
 export const conditionalNavLinks = {
   "/program": [
     {
@@ -153,6 +102,17 @@ const technologies = [
     icon: assets.docker,
   },
 ];
+
+
+const aboutMe = {
+  title: "about me",
+  img: "",
+  introduction: "",
+  hobbies: [
+    ""
+  ]
+
+}
 
 const experiences = [
   {
@@ -274,29 +234,35 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: assets.carrent,
+    image: assets.h1,
     source_code_link: "https://github.com/",
-    code: `
-        const handleBooking = async () => {
-          const response = await fetch('/api/book', {
-            method: 'POST',
-            body: JSON.stringify({ carId, userId }),
-          });
-          const data = await response.json();
-          if (data.success) {
-            alert('Booking successful!');
-          }
-        };
-      `,
+    code: ``,
     images: [
       {
-        url: "path/to/image1.jpg",
-        text: "User interface for booking a car",
+        url: assets.h1,
+        text: "Premiazione 3° posto",
       },
       {
-        url: "path/to/image2.jpg",
-        text: "Admin panel for managing bookings",
+        url: assets.h2,
+        text: "",
       },
+      {
+        url: assets.h3,
+        text: "",
+      },
+      {
+        url: assets.h4,
+        text: "",
+      },
+      {
+        url: assets.h5,
+        text: "",
+      },
+      {
+        url: assets.h6,
+        text: "Postazione di lavoro",
+      },
+      
     ],
   },
   {
@@ -341,7 +307,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: assets.tripguide,
+    image: assets.emotional_model,
     source_code_link:
       "https://colab.research.google.com/drive/1_riAM9IRZCIZBt7tvlr-VEIVn56hpqKr?usp=sharing",
     code: `
@@ -471,6 +437,44 @@ plt.show()
     `,
     images: [],
   },
+  {
+    name: "La bellezza che cura",
+    description: "Il Comune di Jesi, con gli Assessorati all’Urbanistica e alla Cultura, l’Università Politecnica delle Marche, con il suo Corso di Laurea in Ingegneria Edile Architettura, in sinergia con il MAXXI Museo Nazionale delle arti del XXI secolo, hanno organizzato una serie di incontri aperti alla cittadinanza, dedicati all’architetto colombiano Giancarlo Mazzanti. Mazzanti, firma dell’architettura di fama mondiale, ha origini jesine, opera attualmente in diverse parti del mondo ed è uno dei progettisti colombiani più noti nel suo Paese e all’estero, con all’attivo importantissime realizzazioni di carattere pubblico e sociale, che hanno trasformato l’immagine di quartieri e aree urbane in diverse città colombiane. Non solo una mostra interattiva delle sue opere, presso le Sale Espositive Betto Tesei di Palazzo Pianetti, ma anche conferenze e incontri svolti nel mese di novembre alla presenza dell’architetto, presso le scuole secondarie di secondo grado della città di Jesi, per coinvolgere studenti e studentesse e stimolarli, attraverso dispositivi di gioco.",
+    short_description: "Incontro con l'architetto Giancarlo Mazzanti",
+    tags: [
+      {
+        name: "architettura",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "projects",
+        color: "green-text-gradient",
+      },
+    ],
+    image: assets.la_bellezza_che_cura,
+    source_code_link: "",
+    code: ``,
+    images: [],
+  },
+  {
+    name: "WeChat",
+    description: "",
+    short_description: "WebChat",
+    tags: [
+      {
+        name: "informatica",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "applicazione web",
+        color: "green-text-gradient",
+      },
+    ],
+    image: assets.wechat,
+    source_code_link: "",
+    code: ``,
+    images: [],
+  }
 ];
 
 const storia = {
