@@ -233,7 +233,7 @@ const projects = [
   {
     name: "Hackaton",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "",
     short_description: "Platform for booking and managing car rentals.",
     tags: [
       {
@@ -283,8 +283,8 @@ const projects = [
   {
     name: "English 4U",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    short_description: "Web app for searching job openings.",
+      "Corso di inglese per certificazione Fist",
+    short_description: "Corso di inglese per certificazione Fist",
     tags: [
       {
         name: "english",
@@ -301,7 +301,7 @@ const projects = [
     images: [],
   },
   {
-    name: "Emotions Model",
+    name: "Emotional Model",
     description: `
     <h3 class="text-xl font-bold text-white mb-4">L'obiettivo di questo progetto è eseguire un'analisi del sentiment su un dataset contenente informazioni sulla salute mentale di pazienti oncologici vulnerabili.</h3>
     <p class="mb-4">Questo modello effettua una classificazione multi-classe per distinguere l'emozione trasmessa dal testo. Le classi sono positivo, neutrale, negativo e molto negativo.</p>

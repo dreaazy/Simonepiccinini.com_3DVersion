@@ -21,8 +21,8 @@ const Head = ({ isMobile }) => {
 
       <primitive
         object={computer.scene}
-        scale={isMobile ? 1.7 : 3.5}
-        position={isMobile ? [0, 0, -2.2] : [0, 0, 0]}
+        scale={isMobile ? 2.4 : 3.5}
+        position={isMobile ? [0, 0, 0] : [0, 0, 0]}
         rotation={[0, 0, 0]}
       />
     </mesh>
@@ -67,6 +67,7 @@ const HeadScene = () => {
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          
         />
         <Head isMobile={isMobile} />
       </Suspense>
