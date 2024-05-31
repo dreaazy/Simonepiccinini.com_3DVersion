@@ -1,12 +1,39 @@
-// Project.jsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
-import {ProjectCard} from '../components';
+import { ProjectCard } from '../components';
 import { projects } from '../constants';
+import {useImageLoader} from '../components'; // Adjust the path as needed
 
 const Project = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Collect all project image URLs
+  const projectImages = projects.map(project => project.img);
+  const { loaded, loadCount } = useImageLoader(projectImages);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (loaded) {
+
+      window.scrollTo(0, 0);
+      setIsLoading(false);
+    }
+  }, [loaded]);
+
+  if (isLoading) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner"></div>
+        {/* <p>Loading images... {loadCount} / {projectImages.length}</p> */}
+      </div>
+    );
+  }
+
   return (
     <motion.section
       variants={staggerContainer()}

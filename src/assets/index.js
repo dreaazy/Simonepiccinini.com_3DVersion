@@ -78,7 +78,9 @@ import {
   english4u,
   emotional_model,
   la_bellezza_che_cura,
-  wechat
+  la_bellezza_che_cura_mobile,
+  wechat,
+  gglibero
   
 } from "./projects";
 
@@ -137,7 +139,9 @@ export {
   english4u,
   emotional_model,
   la_bellezza_che_cura,
+  la_bellezza_che_cura_mobile,
   wechat,
+  gglibero,
 
   backend,
   creator,

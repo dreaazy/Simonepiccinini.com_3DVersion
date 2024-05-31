@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { storia, italiano } from "../constants";
+import useImageLoader from "./useImageLoader"; // Adjust the path as needed
 
 const TopicDetail = () => {
   const { type, title } = useParams();
@@ -14,16 +15,26 @@ const TopicDetail = () => {
     argomento = storia.argomenti.find((a) => a.titolo === decodeURIComponent(title));
   }
 
+  const mainImage = argomento?.img || "";
+  const subImages = argomento?.argomenti?.map(subArgomento => subArgomento.img).filter(Boolean) || [];
+  const imageUrls = [mainImage, ...subImages];
+  const { loaded, loadCount } = useImageLoader(imageUrls);
+
   useEffect(() => {
-    // Simulate loading process, you can replace it with actual loading logic
-    const timer = setTimeout(() => setIsLoading(false), 2000); // Adjust the timeout as needed
-    return () => clearTimeout(timer);
+    window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    if (loaded) {
+      setIsLoading(false);
+    }
+  }, [loaded]);
 
   if (isLoading) {
     return (
       <div className="spinner-container">
         <div className="spinner"></div>
+        {/* <p>Loading images... {loadCount} / {imageUrls.length}</p> */}
       </div>
     );
   }

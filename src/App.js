@@ -13,7 +13,7 @@ import {
   StarsCanvas
 } from "./components";
 
-import { Pcto, Program, Projects, ErrorPage } from "./pages";
+import { Pcto, Program, Projects, ErrorPage, About } from "./pages";
 
 import ProjectDetail from "./components/ProjectDetail"; // Import the ProjectDetail component
 
@@ -31,7 +31,7 @@ function App() {
           element={
             <>
               <Hero />
-
+              <About/>
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               {/* <Experience /> */}

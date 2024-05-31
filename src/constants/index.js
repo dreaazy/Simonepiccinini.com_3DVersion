@@ -39,11 +39,7 @@ const services = [
     icon: assets.backend,
   },
   {
-    title: "Content Creator2",
-    icon: assets.creator,
-  },
-  {
-    title: "Content Creator",
+    title: "UX Designer",
     icon: assets.creator,
   },
 ];
@@ -105,14 +101,33 @@ const technologies = [
 
 
 const aboutMe = {
-  title: "about me",
-  img: "",
-  introduction: "",
+  title: "About Me",
+  img: "https://example.com/path/to/profile-image.jpg",
+  introduction: "I'm a passionate full stack web developer with a love for technology, music, and science. My journey in web development has been driven by curiosity and a desire to create impactful digital experiences.",
   hobbies: [
-    ""
+    {
+      name: "Music",
+      description: "I play the drums and enjoy experimenting with various instruments such as the piano and guitar. Music allows me to explore my creativity and unwind after a busy day of coding.",
+      img: "https://example.com/path/to/music-image.jpg"
+    },
+    {
+      name: "Sports",
+      description: "Staying active is important to me. I regularly go to the gym, run long distances, and have a background in playing football. These activities keep me fit and energized.",
+      img: "https://example.com/path/to/sports-image.jpg"
+    },
+    {
+      name: "Technology",
+      description: "Beyond web development, I love exploring new tech trends and gadgets. Keeping up-to-date with the latest advancements helps me stay ahead in the tech industry.",
+      img: "https://example.com/path/to/technology-image.jpg"
+    },
+    {
+      name: "Science",
+      description: "I have a deep interest in science, particularly in fields like astrophysics and biology. Learning about the universe and the intricacies of life fascinates me and fuels my curiosity.",
+      img: "https://example.com/path/to/science-image.jpg"
+    }
   ]
+};
 
-}
 
 const experiences = [
   {
@@ -451,7 +466,7 @@ plt.show()
         color: "green-text-gradient",
       },
     ],
-    image: assets.la_bellezza_che_cura,
+    image: assets.la_bellezza_che_cura_mobile,
     source_code_link: "",
     code: ``,
     images: [],
@@ -471,6 +486,25 @@ plt.show()
       },
     ],
     image: assets.wechat,
+    source_code_link: "",
+    code: ``,
+    images: [],
+  },
+  {
+    name: "Giorno Libero",
+    description: "",
+    short_description: "Progetto di classe dell'anno 2023/2024",
+    tags: [
+      {
+        name: "informatica",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "applicazione web",
+        color: "green-text-gradient",
+      },
+    ],
+    image: assets.gglibero,
     source_code_link: "",
     code: ``,
     images: [],
@@ -1637,4 +1671,5 @@ export {
   italiano,
   storia,
   educazioneCivica,
+  aboutMe
 };

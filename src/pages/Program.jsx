@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 import { storia, italiano } from "../constants";
+import {useImageLoader} from "../components";
 
 const TopicCard = ({ index, argomento, type }) => {
   const navigate = useNavigate();
@@ -40,6 +41,34 @@ const TopicCard = ({ index, argomento, type }) => {
 };
 
 const Program = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const italianImages = italiano.argomenti.map(argomento => argomento.img);
+  const storiaImages = storia.argomenti.map(argomento => argomento.img);
+  const imageUrls = [...italianImages, ...storiaImages];
+
+  const { loaded, loadCount } = useImageLoader(imageUrls);
+
+  useEffect(() => {
+
+    
+    
+    if (loaded) {
+
+      window.scrollTo(0, 0);
+      setIsLoading(false);
+    }
+  }, [loaded]);
+
+  if (isLoading) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner"></div>
+        {/* <p>Loading images... {loadCount} / {imageUrls.length}</p> */}
+      </div>
+    );
+  }
+
   return (
     <motion.section
       variants={staggerContainer()}
@@ -57,7 +86,7 @@ const Program = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </motion.p>
       </div>
 

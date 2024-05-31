@@ -13,9 +13,11 @@ import Pcto from "./Pcto"; */
 import Program from "./Program";
 import Projects from "./Projects";
 import ErrorPage from "./ErrorPage";
+import About from "./About";
 
 export {
   Projects,
   Program,
-  ErrorPage
+  ErrorPage,
+  About
 };

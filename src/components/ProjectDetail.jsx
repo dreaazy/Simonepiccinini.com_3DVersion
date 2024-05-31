@@ -6,34 +6,33 @@ import { projects } from '../constants';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import useImageLoader from './useImageLoader';
 
 const ProjectDetail = () => {
   const { projectName } = useParams();
   const [isLoading, setIsLoading] = useState(true);
-  const [imagesLoaded, setImagesLoaded] = useState(0);
   const project = projects.find((p) => p.name === projectName);
 
-  const totalImages = project?.images?.length || 0;
+  const mainImage = project?.image || "";
+  const galleryImages = project?.images?.map(image => image.url) || [];
+  const imageUrls = [mainImage, ...galleryImages];
+  const { loaded, loadCount } = useImageLoader(imageUrls);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000); // Simulate loading delay
-    return () => clearTimeout(timer);
+    window.scrollTo(0, 0);
   }, []);
 
-  const handleImageLoad = () => {
-    setImagesLoaded((prev) => prev + 1);
-  };
-
   useEffect(() => {
-    if (imagesLoaded === totalImages) {
+    if (loaded) {
       setIsLoading(false);
     }
-  }, [imagesLoaded, totalImages]);
+  }, [loaded]);
 
   if (isLoading) {
     return (
       <div className="spinner-container">
         <div className="spinner"></div>
+        {/* <p>Loading images... {loadCount} / {imageUrls.length}</p> */}
       </div>
     );
   }
@@ -102,7 +101,6 @@ const ProjectDetail = () => {
                   src={image.url}
                   alt={`project_image_${index}`}
                   className="w-full h-full object-cover rounded-2xl"
-                  onLoad={handleImageLoad}
                 />
                 <p className="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white p-2 rounded">{image.text}</p>
               </div>
