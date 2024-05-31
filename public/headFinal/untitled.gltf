@@ -1,0 +1,165 @@
+{
+	"asset": {
+		"generator": "Khronos glTF Blender I/O v4.1.62",
+		"version": "2.0"
+	},
+	"scene": 0,
+	"scenes": [
+		{
+			"name": "Scene",
+			"nodes": [
+				0
+			]
+		}
+	],
+	"nodes": [
+		{
+			"mesh": 0,
+			"name": "sopracciglia:sopracciglia:pSphere2",
+			"rotation": [
+				0.7071068286895752,
+				0,
+				0,
+				0.7071068286895752
+			],
+			"scale": [
+				0.009999999776482582,
+				0.009999999776482582,
+				0.009999999776482582
+			]
+		}
+	],
+	"materials": [
+		{
+			"doubleSided": true,
+			"name": "sopracciglia:standardSurface2",
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicRoughnessTexture": {
+					"index": 1
+				},
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5527864098548889
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Mesh",
+			"primitives": [
+				{
+					"attributes": {
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2
+					},
+					"indices": 3,
+					"material": 0
+				}
+			]
+		}
+	],
+	"accessors": [
+		{
+			"bufferView": 0,
+			"componentType": 5126,
+			"count": 183112,
+			"max": [
+				31.306324005126953,
+				33.64777755737305,
+				41.26744079589844
+			],
+			"min": [
+				-40.16985321044922,
+				-36.4986457824707,
+				-47.36949157714844
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"componentType": 5126,
+			"count": 183112,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"componentType": 5126,
+			"count": 183112,
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"componentType": 5125,
+			"count": 1021917,
+			"type": "SCALAR"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 2197344,
+			"byteOffset": 0,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 2197344,
+			"byteOffset": 2197344,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 1464896,
+			"byteOffset": 4394688,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 4087668,
+			"byteOffset": 5859584,
+			"target": 34963
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 9947252,
+			"uri": "untitled.bin"
+		}
+	],
+	"textures": [
+		{
+			"sampler": 0,
+			"source": 0
+		},
+		{
+			"sampler": 0,
+			"source": 1
+		},
+		{
+			"sampler": 0,
+			"source": 2
+		}
+	],
+	"images": [
+		{
+			"uri": "sopracciglia_standardSurface2_BaseColor.1001.png"
+		},
+		{
+			"uri": "sopracciglia_standardSurface2_Roughness.1001.png"
+		},
+		{
+			"uri": "sopracciglia_standardSurface2_Metallic.1001.png"
+		}
+	],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9729,
+			"wrapS": 10497,
+			"wrapT": 10497
+		}
+	]
+}
