@@ -30,12 +30,12 @@ function App() {
           path="/"
           element={
             <>
-              <Hero />
-              <About/>
+              {/* <Hero />
+              <About /> */}
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               {/* <Experience /> */}
-             {/*  <Experience /> */}
+              {/*  <Experience /> */}
               {/*  <Tech />
               <Works />
               <Feedbacks /> */}
@@ -43,30 +43,29 @@ function App() {
           }
         />
 
-        {/* <Route
+        <Route
           path="/pcto"
           element={
             <>
               <Pcto />
             </>
           }
-        /> */}
+        />
 
         <Route
           path="/program"
           element={
-            <>
-              <Program />
-            </>
+
+            <Program />
           }
         />
 
         <Route
           path="/projects"
           element={
-            <>
-              <Projects />
-            </>
+
+            <Projects />
+
           }
         />
 

@@ -14,10 +14,12 @@ import Program from "./Program";
 import Projects from "./Projects";
 import ErrorPage from "./ErrorPage";
 import About from "./About";
+import Pcto from "./Pcto";
 
 export {
   Projects,
   Program,
   ErrorPage,
-  About
+  About,
+  Pcto
 };

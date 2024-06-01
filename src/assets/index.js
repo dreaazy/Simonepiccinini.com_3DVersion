@@ -81,7 +81,7 @@ import {
   la_bellezza_che_cura_mobile,
   wechat,
   gglibero
-  
+
 } from "./projects";
 
 import {
@@ -92,9 +92,38 @@ import {
   h5,
   h6
 
-  
+
 } from "./hackaton";
 
+import {
+  S1_hostFamily,
+  S2_beach,
+  S2_bexhill,
+  S2_sea,
+  S3_england,
+  S3_locationCity,
+  S4_bus,
+  S4_college,
+  S5_business,
+  S5_economics,
+  S5_mate,
+  S6_band,
+  S6_library,
+  S6_refectory,
+  S7_basket,
+  S7_chemistry,
+  S7_football,
+  S8_kid,
+  S8_london,
+  S9_brighton,
+  S9_bros,
+  S9_nino,
+  S10_bruxell,
+  S10_flags,
+  S10_sun,
+  S11_nature,
+  S11_thankyou,
+} from "./pcto";
 
 export {
   sto_1,
@@ -113,7 +142,35 @@ export {
   sto_14,
   sto_15,
   sto_16,
-  
+
+  S1_hostFamily,
+  S2_beach,
+  S2_bexhill,
+  S2_sea,
+  S3_england,
+  S3_locationCity,
+  S4_bus,
+  S4_college,
+  S5_business,
+  S5_economics,
+  S5_mate,
+  S6_band,
+  S6_library,
+  S6_refectory,
+  S7_basket,
+  S7_chemistry,
+  S7_football,
+  S8_kid,
+  S8_london,
+  S9_brighton,
+  S9_bros,
+  S9_nino,
+  S10_bruxell,
+  S10_flags,
+  S10_sun,
+  S11_nature,
+  S11_thankyou,
+
   h1,
   h2,
   h3,

@@ -10,6 +10,10 @@ export const baseNavLinks = [
     id: "projects",
     title: "projects",
   },
+  {
+    id: "pcto",
+    title: "pcto",
+  },
 ];
 export const conditionalNavLinks = {
   "/program": [
@@ -22,7 +26,17 @@ export const conditionalNavLinks = {
       title: "Storia",
     },
   ],
-  // You can add more routes and their specific links here
+  "/pcto": [
+    {
+      id: "italiano",
+      title: "Italiano",
+    },
+    {
+      id: "storia",
+      title: "Storia",
+    },
+  ]
+  
 };
 
 const services = [
