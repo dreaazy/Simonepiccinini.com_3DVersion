@@ -32,8 +32,6 @@ import tripguide from "./tripguide.png";
 
 import LogoWeb from "./logoweb.svg";
 
-
-
 import {
   sto_1,
   sto_2,
@@ -54,7 +52,6 @@ import {
 } from "./storia";
 
 import {
-
   ita_1,
   ita_2,
   ita_3,
@@ -69,31 +66,25 @@ import {
   ita_12,
   ita_13,
   ita_14,
-
 } from "./italiano";
 
-
 import {
-
   english4u,
   emotional_model,
   la_bellezza_che_cura,
   la_bellezza_che_cura_mobile,
   wechat,
-  gglibero
+  gglibero,
+
+  od_ipynb,
+  od_md,
+  video_dim,
+  image_dim,
+  od_cover
 
 } from "./projects";
 
-import {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6
-
-
-} from "./hackaton";
+import { h1, h2, h3, h4, h5, h6 } from "./hackaton";
 
 import {
   S1_hostFamily,
@@ -142,7 +133,6 @@ export {
   sto_14,
   sto_15,
   sto_16,
-
   S1_hostFamily,
   S2_beach,
   S2_bexhill,
@@ -170,14 +160,12 @@ export {
   S10_sun,
   S11_nature,
   S11_thankyou,
-
   h1,
   h2,
   h3,
   h4,
   h5,
   h6,
-
   ita_1,
   ita_2,
   ita_3,
@@ -192,14 +180,17 @@ export {
   ita_12,
   ita_13,
   ita_14,
-
   english4u,
   emotional_model,
   la_bellezza_che_cura,
   la_bellezza_che_cura_mobile,
   wechat,
   gglibero,
-
+  od_ipynb,
+  od_md,
+  video_dim,
+  image_dim,
+  od_cover,
   backend,
   creator,
   mobile,

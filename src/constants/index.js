@@ -27,14 +27,7 @@ export const conditionalNavLinks = {
     },
   ],
   "/pcto": [
-    {
-      id: "italiano",
-      title: "Italiano",
-    },
-    {
-      id: "storia",
-      title: "Storia",
-    },
+    
   ]
   
 };
@@ -315,7 +308,7 @@ const projects = [
     images: [],
   },
   {
-    name: "Emotional Model",
+    name: "Emotions Detection Model",
     description: `
     <h3 class="text-xl font-bold text-white mb-4">L'obiettivo di questo progetto è eseguire un'analisi del sentiment su un dataset contenente informazioni sulla salute mentale di pazienti oncologici vulnerabili.</h3>
     <p class="mb-4">Questo modello effettua una classificazione multi-classe per distinguere l'emozione trasmessa dal testo. Le classi sono positivo, neutrale, negativo e molto negativo.</p>
@@ -525,23 +518,23 @@ plt.show()
   },
   {
     name: "Object Detection Model",
-    description: "",
-    short_description: "",
+    description: "This project demonstrates using YOLOv5 for real-time object detection. YOLOv5, \"You Only Look Once,\" is a fast algorithm that predicts bounding boxes and class probabilities in images. We install necessary dependencies, load a pre-trained model, and perform object detection on a sample image and real-time webcam feed. Due to an AMD GPU (Radeon RX 470), CUDA is not used, defaulting to CPU processing with an Intel(R) Core(TM) i5-9400F. Despite slower processing, YOLOv5's functionality and accuracy remain unaffected, showcasing its capabilities in both static and dynamic scenarios.",
+    short_description: "Object detection model",
     tags: [
       {
-        name: "informatica",
+        name: "intelligenza artificiale",
         color: "blue-text-gradient",
       },
       {
-        name: "applicazione web",
+        name: "CNN",
         color: "green-text-gradient",
       },
     ],
-    image: assets.gglibero,
+    image: assets.od_cover,
     source_code_link: "",
     code: `
 
-# YOLOv5 Object Detection, Simone Piccinini 
+# YOLOv5 Object Detection
 
 This notebook demonstrates how to set up and use YOLOv5 for object detection tasks. 
 
@@ -552,21 +545,16 @@ YOLO is an acronym for **“You Only Look Once”** and it has that name because
 It is a single-stage object detector that uses a convolutional neural network (CNN) to predict the bounding boxes and class probabilities of objects in input images.
 
 
-## How Does it works? **_reference_** [Yolo how does it works](https://kili-technology.com/data-labeling/machine-learning/yolo-algorithm-real-time-object-detection-from-a-to-z).
+## How Does it works?
 
-### The basic idea behind YOLO is to divide the input image into a grid of cells and, for each cell, predict the probability of the presence of an object and the bounding box coordinates of the object. The process of YOLO can be broken down into several steps:
+###### The basic idea behind YOLO is to divide the input image into a grid of cells and, for each cell, predict the probability of the presence of an object and the bounding box coordinates of the object. The process of YOLO can be broken down into several steps:
 
-1. Input image is passed through a CNN to extract features from the image.
-
-2. The features are then passed through a series of fully connected layers, which predict ‌class probabilities and bounding box coordinates.
-
-3. The image is divided into a grid of cells, and each cell is responsible for predicting a set of bounding boxes and class probabilities.
-
-4. The output of the network is a set of bounding boxes and class probabilities for each cell.
-
-5. The bounding boxes are then filtered using a post-processing algorithm called non-max suppression to remove overlapping boxes and choose the box with the highest probability.
-
-6. The final output is a set of predicted bounding boxes and class labels for each object in the image.
+- Input image is passed through a CNN to extract features from the image.
+- The features are then passed through a series of fully connected layers, which predict ‌class probabilities and bounding box coordinates.
+- The image is divided into a grid of cells, and each cell is responsible for predicting a set of bounding boxes and class probabilities.
+- The output of the network is a set of bounding boxes and class probabilities for each cell.
+- The bounding boxes are then filtered using a post-processing algorithm called non-max suppression to remove overlapping boxes and choose the box with the highest probability.
+- The final output is a set of predicted bounding boxes and class labels for each object in the image.
 
 One of the key advantages of YOLO is that it processes the entire image in one pass, making it faster and more efficient than two-stage object detectors such as R-CNN and its variants.
 
@@ -723,14 +711,30 @@ This code initializes the webcam, captures frames in a loop, performs inference 
 # Summary
 
 This notebook, demostrates how to set up and use YOLOv5 for object detection tasks. We installed the necessary dependencies, loaded a pre-trained YOLOv5 model, performed object detection on a sample image, and ran real-time object detection using a webcam.
-
-
-
-
-
-
     `,
-    images: [],
+    images: [
+      {
+        url: assets.image_dim,
+        text: "",
+      },
+    ],
+    videos: [
+      {
+        url: assets.video_dim,
+        text: "",
+      },
+    ],
+    downloads: [
+      {
+        source: assets.od_ipynb,
+        text: "Download Jupyter Notebook"
+      },
+      {
+        source: assets.od_md,
+        text: "Download Markdown File"
+      }
+    ]
+    
   }
 ];
 

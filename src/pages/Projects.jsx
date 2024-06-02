@@ -39,7 +39,7 @@ const Project = () => {
       variants={staggerContainer()}
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      className={`sm:px-16 px-6 sm:py-16 md:pt-32 py-16 max-w-7xl mx-auto relative z-0`}
     >
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>My Work</p>

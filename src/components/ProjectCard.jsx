@@ -9,7 +9,7 @@ const ProjectCard = ({ index, project }) => {
     <motion.div
       key={`project-${index}`}
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-tertiary p-5 rounded-2xl sm:w-[340px] md:w-[290px] xl:w-[340px] w-full cursor-pointer"
     >
       <Link to={`/projects/${project.name}`}>
         <div className="relative w-full h-[230px]">
