@@ -7,6 +7,7 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import useImageLoader from './useImageLoader';
+import remarkGfm from 'remark-gfm';
 
 const ProjectDetail = () => {
   const { projectName } = useParams();
@@ -68,10 +69,21 @@ const ProjectDetail = () => {
         <div className="mt-10 bg-black p-5 rounded-md">
           <h3 className="text-white font-bold text-[24px]">Code</h3>
           <ReactMarkdown
+            className="markdown"
             children={project.code}
+            remarkPlugins={[remarkGfm]}
             components={{
-              code({ node, inline, className, children, ...props }) {
-                const match = /language-(\w+)/.exec(className || '')
+              h1: ({node, ...props}) => <h1 className="text-4xl font-bold mb-6 mt-6" {...props} />,
+              h2: ({node, ...props}) => <h2 className="text-3xl font-bold" {...props} />,
+              h3: ({node, ...props}) => <h3 className="text-2xl font-bold" {...props} />,
+              h4: ({node, ...props}) => <h4 className="text-xl font-bold" {...props} />,
+              h5: ({node, ...props}) => <h5 className="text-lg font-bold" {...props} />,
+              h6: ({node, ...props}) => <h6 className="text-base font-bold" {...props} />,
+              p: ({node, ...props}) => <p className="text-base text-gray-300" {...props} />,
+              strong: ({node, ...props}) => <strong className="font-bold" {...props} />,
+              em: ({node, ...props}) => <em className="italic" {...props} />,
+              code({node, inline, className, children, ...props}) {
+                const match = /language-(\w+)/.exec(className || '');
                 return !inline && match ? (
                   <SyntaxHighlighter
                     children={String(children).replace(/\n$/, '')}
@@ -84,7 +96,7 @@ const ProjectDetail = () => {
                   <code className={className} {...props}>
                     {children}
                   </code>
-                )
+                );
               }
             }}
           />

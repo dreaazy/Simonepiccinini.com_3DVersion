@@ -540,7 +540,8 @@ plt.show()
     image: assets.gglibero,
     source_code_link: "",
     code: `
-    # YOLOv5 Object Detection, Simone Piccinini 
+
+# YOLOv5 Object Detection, Simone Piccinini 
 
 This notebook demonstrates how to set up and use YOLOv5 for object detection tasks. 
 
@@ -583,7 +584,7 @@ Regardless of the use of the CPU the functionality and accuracy of the object de
 The results you are going to see are based using the CPU: Intel(R) Core(TM) i5-9400F CPU, 2.90 GHz
 
 
-## 1. Install and Import Dependencies
+# 1. Install and Import Dependencies
 
 First, we need to install the required libraries: \`torch\`, \`torchvision\`, \`torchaudio\`, and clone the YOLOv5 repository. 
 We also need to install the dependencies specified in the YOLOv5 repository.
@@ -595,7 +596,7 @@ We also need to install the dependencies specified in the YOLOv5 repository.
 
 \`\`\`
 
-## 2. Import Necessary Libraries
+# 2. Import Necessary Libraries
 
 We will import the required libraries for our task. These include \`torch\` for loading the YOLOv5 model, \`matplotlib\` for displaying images, \`numpy\` for numerical operations, and \`cv2\` from OpenCV for handling image and video data.
 
