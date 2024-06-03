@@ -14,6 +14,10 @@ export const baseNavLinks = [
     id: "pcto",
     title: "pcto",
   },
+  {
+    id: "civica",
+    title: "civica",
+  },
 ];
 export const conditionalNavLinks = {
   "/program": [

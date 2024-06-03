@@ -10,10 +10,10 @@ import {
   Contact,
   Experience,
   TopicDetail,
-  StarsCanvas
+  StarsCanvas,
 } from "./components";
 
-import { Pcto, Program, Projects, ErrorPage, About } from "./pages";
+import { Pcto, Program, Projects, ErrorPage, About, Civica } from "./pages";
 
 import ProjectDetail from "./components/ProjectDetail"; // Import the ProjectDetail component
 
@@ -30,8 +30,8 @@ function App() {
           path="/"
           element={
             <>
-              {/* <Hero />
-              <About /> */}
+              <Hero />
+              {/* <About /> */}
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               {/* <Experience /> */}
@@ -53,21 +53,17 @@ function App() {
         />
 
         <Route
-          path="/program"
+          path="/civica"
           element={
-
-            <Program />
+            <>
+              <Civica />
+            </>
           }
         />
 
-        <Route
-          path="/projects"
-          element={
+        <Route path="/program" element={<Program />} />
 
-            <Projects />
-
-          }
-        />
+        <Route path="/projects" element={<Projects />} />
 
         <Route path="/projects/:projectName" element={<ProjectDetail />} />
 
@@ -90,7 +86,6 @@ function App() {
         <Contact />
         <StarsCanvas />
       </div>
-
     </div>
   );
 }

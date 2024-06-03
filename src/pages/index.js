@@ -15,11 +15,13 @@ import Projects from "./Projects";
 import ErrorPage from "./ErrorPage";
 import About from "./About";
 import Pcto from "./Pcto";
+import Civica from "./Civica";
 
 export {
   Projects,
   Program,
   ErrorPage,
   About,
-  Pcto
+  Pcto,
+  Civica
 };
