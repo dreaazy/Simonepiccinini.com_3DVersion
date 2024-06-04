@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { motion } from "framer-motion";
 
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
+import { useImageLoader } from "../components";
 
 import {
   S1_hostFamily,
@@ -34,31 +35,67 @@ import {
   S11_thankyou,
 } from "../assets/pcto";
 
-const Title = ({ title }) => {
-  return <h1>{title}</h1>;
-};
-
-/* PctoImage card */
-const PctoImage = ({ name, image }) => {
-  return (
-    <motion.div
-      variants={fadeIn("up", "spring", 0.5, 0.75)}
-      className="bg-tertiary p-5 rounded-2xl mx-auto"
-    >
-      <div className="relative w-full">
-        <img
-          src={image}
-          alt="project_image"
-          className="w-full h-auto object-contain rounded-2xl"
-        />
-      </div>
-
-      <h1 className="text-center mt-5 text-xl">{name}</h1>
-    </motion.div>
-  );
-};
-
 const Pcto = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Collect all project image URLs
+  const pctoImages = [
+    S1_hostFamily,
+    S2_beach,
+    S2_bexhill,
+    S2_sea,
+    S3_england,
+    S3_locationCity,
+    S4_bus,
+    S4_college,
+    S5_business,
+    S5_economics,
+    S5_mate,
+    S6_band,
+    S6_library,
+    S6_refectory,
+    S7_basket,
+    S7_chemistry,
+    S7_football,
+    S8_kid,
+    S8_london,
+    S9_brighton,
+    S9_bros,
+    S9_nino,
+    S10_bruxell,
+    S10_flags,
+    S10_sun,
+    S11_nature,
+    S11_thankyou,
+  ];
+
+  const { loaded, loadCount } = useImageLoader(pctoImages);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (loaded) {
+
+      window.scrollTo(0, 0);
+      setIsLoading(false);
+    }
+  }, [loaded]);
+
+  if (isLoading) {
+
+   /*  const loadingPercentage = Math.round((loadCount / pctoImages.length)); */
+
+    return (
+      <div className="spinner-container">
+        <div className="spinner"></div>
+        {/* <p>{loadingPercentage}%</p> */}
+      </div>
+    );
+  }
+
   return (
     <motion.section
       variants={staggerContainer()}

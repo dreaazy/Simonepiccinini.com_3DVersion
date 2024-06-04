@@ -39,7 +39,7 @@ const Project = () => {
       variants={staggerContainer()}
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`sm:px-16 px-6 sm:py-16 md:pt-32 py-16 max-w-7xl mx-auto relative z-0`}
+      className={`${styles.padding} max-w-7xl mx-auto relative z-0 pt-32`}
     >
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>My Work</p>
@@ -55,7 +55,7 @@ const Project = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} project={project} />
         ))}

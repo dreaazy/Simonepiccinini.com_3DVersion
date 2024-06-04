@@ -75,7 +75,8 @@ import {
   la_bellezza_che_cura_mobile,
   wechat,
   gglibero,
-
+  thumbnail_gglibero,
+  assegnazione,
   od_ipynb,
   od_md,
   video_dim,
@@ -186,6 +187,8 @@ export {
   la_bellezza_che_cura_mobile,
   wechat,
   gglibero,
+  thumbnail_gglibero,
+  assegnazione,
   od_ipynb,
   od_md,
   video_dim,

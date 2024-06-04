@@ -243,6 +243,7 @@ const testimonials = [
 const projects = [
   {
     name: "Hackaton",
+    materia: "informatica",
     description:
       "",
     short_description: "Platform for booking and managing car rentals.",
@@ -261,6 +262,7 @@ const projects = [
       },
     ],
     image: assets.h1,
+    thumbnail_image: assets.emotional_model,
     source_code_link: "https://github.com/",
     code: ``,
     images: [
@@ -293,6 +295,7 @@ const projects = [
   },
   {
     name: "English 4U",
+    materia: "inglese",
     description:
       "Corso di inglese per certificazione Fist",
     short_description: "Corso di inglese per certificazione Fist",
@@ -307,12 +310,14 @@ const projects = [
       },
     ],
     image: assets.english4u,
+    thumbnail_image: assets.emotional_model,
     source_code_link: "",
     code: ``,
     images: [],
   },
   {
     name: "Emotions Detection Model",
+    materia: "IA",
     description: `
     <h3 class="text-xl font-bold text-white mb-4">L'obiettivo di questo progetto è eseguire un'analisi del sentiment su un dataset contenente informazioni sulla salute mentale di pazienti oncologici vulnerabili.</h3>
     <p class="mb-4">Questo modello effettua una classificazione multi-classe per distinguere l'emozione trasmessa dal testo. Le classi sono positivo, neutrale, negativo e molto negativo.</p>
@@ -334,6 +339,7 @@ const projects = [
       },
     ],
     image: assets.emotional_model,
+    thumbnail_image: assets.emotional_model,
     source_code_link:
       "https://colab.research.google.com/drive/1_riAM9IRZCIZBt7tvlr-VEIVn56hpqKr?usp=sharing",
     code: `
@@ -465,6 +471,7 @@ plt.show()
   },
   {
     name: "La bellezza che cura",
+    materia: "inconti",
     description: "Il Comune di Jesi, con gli Assessorati all’Urbanistica e alla Cultura, l’Università Politecnica delle Marche, con il suo Corso di Laurea in Ingegneria Edile Architettura, in sinergia con il MAXXI Museo Nazionale delle arti del XXI secolo, hanno organizzato una serie di incontri aperti alla cittadinanza, dedicati all’architetto colombiano Giancarlo Mazzanti. Mazzanti, firma dell’architettura di fama mondiale, ha origini jesine, opera attualmente in diverse parti del mondo ed è uno dei progettisti colombiani più noti nel suo Paese e all’estero, con all’attivo importantissime realizzazioni di carattere pubblico e sociale, che hanno trasformato l’immagine di quartieri e aree urbane in diverse città colombiane. Non solo una mostra interattiva delle sue opere, presso le Sale Espositive Betto Tesei di Palazzo Pianetti, ma anche conferenze e incontri svolti nel mese di novembre alla presenza dell’architetto, presso le scuole secondarie di secondo grado della città di Jesi, per coinvolgere studenti e studentesse e stimolarli, attraverso dispositivi di gioco.",
     short_description: "Incontro con l'architetto Giancarlo Mazzanti",
     tags: [
@@ -478,12 +485,14 @@ plt.show()
       },
     ],
     image: assets.la_bellezza_che_cura_mobile,
+    thumbnail_image: assets.emotional_model,
     source_code_link: "",
     code: ``,
     images: [],
   },
   {
     name: "WeChat",
+    materia: "informatica",
     description: "",
     short_description: "WebChat",
     tags: [
@@ -497,13 +506,16 @@ plt.show()
       },
     ],
     image: assets.wechat,
+    thumbnail_image: assets.emotional_model,
     source_code_link: "",
     code: ``,
     images: [],
   },
   {
     name: "Giorno Libero",
-    description: "",
+    materia: "informatica",
+    description: 
+    " L’IIS Marconi Pieralisi somministra annualmente, nel mese di Agosto, un questionario destinato a tutti i suoi docenti per ottenere le loro preferenze riguardo il giorno della settimana libero, che potranno avere all’inizio del prossimo anno scolastico. È presente un responsabile dotato delle preferenze storiche ed attuali dei docenti su un foglio Excel, e che ha il ruolo di analizzare i dati manualmente e assegnare quindi il giorno libero a ciascun professore. L'obiettivo di questo progetto è quello di sostituire il vecchio questionario ed aiutare il responsabile nella scelta definitiva ed assegnazione del giorno libero di ogni docente.",
     short_description: "Progetto di classe dell'anno 2023/2024",
     tags: [
       {
@@ -516,12 +528,19 @@ plt.show()
       },
     ],
     image: assets.gglibero,
+    thumbnail_image: assets.thumbnail_gglibero,
     source_code_link: "",
     code: ``,
-    images: [],
+    images: [
+      {
+        url: assets.assegnazione,
+        text: "",
+      }
+    ],
   },
   {
     name: "Object Detection Model",
+    materia: "IA",
     description: "This project demonstrates using YOLOv5 for real-time object detection. YOLOv5, \"You Only Look Once,\" is a fast algorithm that predicts bounding boxes and class probabilities in images. We install necessary dependencies, load a pre-trained model, and perform object detection on a sample image and real-time webcam feed. Due to an AMD GPU (Radeon RX 470), CUDA is not used, defaulting to CPU processing with an Intel(R) Core(TM) i5-9400F. Despite slower processing, YOLOv5's functionality and accuracy remain unaffected, showcasing its capabilities in both static and dynamic scenarios.",
     short_description: "Object detection model",
     tags: [
@@ -535,6 +554,7 @@ plt.show()
       },
     ],
     image: assets.od_cover,
+    thumbnail_image: assets.emotional_model,
     source_code_link: "",
     code: `
 
@@ -1397,7 +1417,7 @@ const italiano = {
   docente: "Giulia Montesi",
   argomenti: [
     {
-      titolo: "Il Naturalismo francese: Emile Zola L’Inizio dell’Ammazzatoio",
+      titolo: "Emile Zola",
       img: assets.ita_1,
     },
     {

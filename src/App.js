@@ -31,7 +31,7 @@ function App() {
           element={
             <>
               <Hero />
-              {/* <About /> */}
+              <About />
               {/* Uncomment these components as needed */}
               {/* <About /> */}
               {/* <Experience /> */}

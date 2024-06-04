@@ -49,7 +49,7 @@ const ProjectDetail = () => {
     >
       <div className="relative w-full h-[500px] mb-10">
         <img
-          src={project.image}
+          src={project.thumbnail_image}
           alt={project.name}
           className="w-full h-full object-cover rounded-2xl"
         />

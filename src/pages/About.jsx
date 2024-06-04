@@ -66,9 +66,9 @@ const About = () => {
 
             {aboutMe.hobbies.map((hobby, index) => (
                 <div key={index}>
-                    <h2>{hobby.name}</h2>
-                    <img src={hobby.img} alt={hobby.name} />
-                    <p>{hobby.description}</p>
+                    <h2 className={styles.sectionHeadText}>{hobby.name}</h2>
+                    <img className="w-16 h-16 object-contain" src={hobby.img} alt={hobby.name} />
+                    <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">{hobby.description}</p>
                 </div>
             ))}
 
