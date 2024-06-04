@@ -23,8 +23,11 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
-      <HeadScene />
+      <motion.div
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] mt-64'
+      >
+        <HeadScene />
+      </motion.div>
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
