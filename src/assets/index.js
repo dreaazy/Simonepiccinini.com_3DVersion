@@ -71,9 +71,11 @@ import {
 import {
   english4u,
   emotional_model,
+  thumbnail_emotional_model,
   la_bellezza_che_cura,
   la_bellezza_che_cura_mobile,
   wechat,
+  thumbnail_wechat,
   gglibero,
   thumbnail_gglibero,
   assegnazione,
@@ -81,11 +83,12 @@ import {
   od_md,
   video_dim,
   image_dim,
-  od_cover
+  od_cover,
+
 
 } from "./projects";
 
-import { h1, h2, h3, h4, h5, h6 } from "./hackaton";
+import { h1, h2, h3, h4, h5, h6, hackaton, thumbnail_hackaton } from "./hackaton";
 
 import {
   S1_hostFamily,
@@ -167,6 +170,8 @@ export {
   h4,
   h5,
   h6,
+  hackaton,
+  thumbnail_hackaton,
   ita_1,
   ita_2,
   ita_3,
@@ -183,9 +188,11 @@ export {
   ita_14,
   english4u,
   emotional_model,
+  thumbnail_emotional_model,
   la_bellezza_che_cura,
   la_bellezza_che_cura_mobile,
   wechat,
+  thumbnail_wechat,
   gglibero,
   thumbnail_gglibero,
   assegnazione,
