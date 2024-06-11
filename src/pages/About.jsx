@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => (
     <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className='w-[250px] h-[320px] green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+        className='w-full sm:w-[250px] h-[320px] green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
         <div
             className='bg-tertiary rounded-[20px] py-5 px-12 h-full flex flex-col justify-evenly items-center'
@@ -65,13 +65,16 @@ const About = () => {
             </motion.p>
 
             {aboutMe.hobbies.map((hobby, index) => (
-                <div key={index}>
-                    <h2 className={styles.sectionHeadText}>{hobby.name}</h2>
-                    <img className="w-16 h-16 object-contain" src={hobby.img} alt={hobby.name} />
-                    <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">{hobby.description}</p>
+                <div key={index} className="flex flex-col sm:flex-row items-start mt-8">
+                    {hobby.img && (
+                        <img className="w-full sm:w-64 h-auto object-contain sm:mr-4 mb-4 sm:mb-0" src={hobby.img} alt={hobby.name} />
+                    )}
+                    <div>
+                        <h2 className={styles.sectionHeadText}>{hobby.name}</h2>
+                        <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">{hobby.description}</p>
+                    </div>
                 </div>
             ))}
-
         </>
     );
 };

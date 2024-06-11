@@ -70,6 +70,7 @@ import {
 
 import {
   english4u,
+  thumbnail_english4u,
   emotional_model,
   thumbnail_emotional_model,
   la_bellezza_che_cura,
@@ -84,6 +85,7 @@ import {
   video_dim,
   image_dim,
   od_cover,
+  thumbnail_od_cover
 
 
 } from "./projects";
@@ -120,7 +122,19 @@ import {
   S11_thankyou,
 } from "./pcto";
 
+
+import {
+  music_kid,
+  music_teen,
+  technology_kid,
+  sport
+} from "./aboutme";
+
 export {
+  music_kid,
+  music_teen,
+  technology_kid,
+  sport,
   sto_1,
   sto_2,
   sto_3,
@@ -187,6 +201,7 @@ export {
   ita_13,
   ita_14,
   english4u,
+  thumbnail_english4u,
   emotional_model,
   thumbnail_emotional_model,
   la_bellezza_che_cura,
@@ -201,6 +216,7 @@ export {
   video_dim,
   image_dim,
   od_cover,
+  thumbnail_od_cover,
   backend,
   creator,
   mobile,

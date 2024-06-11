@@ -118,23 +118,23 @@ const aboutMe = {
   hobbies: [
     {
       name: "Music",
-      description: "I play the drums and enjoy experimenting with various instruments such as the piano and guitar. Music allows me to explore my creativity and unwind after a busy day of coding.",
-      img: "https://example.com/path/to/music-image.jpg"
+      description: "I've been playing the drums since I was six years old. My passion for music has only grown over the years. I love to experiment with various instruments such as the piano, guitar, and even some digital music production tools. Playing in a band regularly gives me the opportunity to perform in concerts and collaborate with other musicians. Music is not just a hobby for me; it's a vital part of my life that helps me to unwind, express myself creatively, and explore new sounds and rhythms.",
+      img: assets.music_kid
     },
     {
       name: "Sports",
-      description: "Staying active is important to me. I regularly go to the gym, run long distances, and have a background in playing football. These activities keep me fit and energized.",
-      img: "https://example.com/path/to/sports-image.jpg"
+      description: "Sports have always been an integral part of my life. Starting with football during my childhood, I developed a strong foundation in teamwork and discipline. As I grew older, I expanded my athletic pursuits to include regular gym sessions and long-distance running. These activities are crucial for maintaining my physical health and mental well-being. The discipline and energy I gain from staying active are invaluable, helping me to stay focused and energized in both my personal and professional life.",
+      img: assets.sport
     },
     {
       name: "Technology",
-      description: "Beyond web development, I love exploring new tech trends and gadgets. Keeping up-to-date with the latest advancements helps me stay ahead in the tech industry.",
-      img: "https://example.com/path/to/technology-image.jpg"
+      description: "My fascination with technology began at a very young age. I was always intrigued by how things work, which led me to build and deconstruct various gadgets and toys around the house. This curiosity naturally evolved into a passion for programming and technology. I have always been driven by the desire to create new things, from simple scripts to complex applications. Keeping up with the latest tech trends and gadgets excites me and keeps me on the cutting edge of the tech industry. This constant learning and innovation fuel my career as a full stack developer.",
+      img: assets.technology_kid
     },
     {
       name: "Science",
-      description: "I have a deep interest in science, particularly in fields like astrophysics and biology. Learning about the universe and the intricacies of life fascinates me and fuels my curiosity.",
-      img: "https://example.com/path/to/science-image.jpg"
+      description: "I have a profound interest in science, especially in the fields of physics and mathematics. My curiosity about the universe and the laws that govern it drives me to constantly seek out new knowledge. I enjoy reading about the latest scientific discoveries and theories, and I often find myself pondering over complex scientific problems. This passion for science is not just about acquiring knowledge; it also deeply influences my analytical thinking and problem-solving skills. Understanding the intricacies of life and the universe fuels my curiosity and inspires me to keep learning and exploring.",
+      img: ""
     }
   ]
 };
@@ -142,8 +142,8 @@ const aboutMe = {
 
 const experiences = [
   {
-    title: "First Year",
-    company_name: "Click To Explore",
+    title: "Imperialismo",
+    company_name: "fine 1800",
     icon: assets.starbucks,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
@@ -310,7 +310,7 @@ const projects = [
       },
     ],
     image: assets.english4u,
-    thumbnail_image: assets.emotional_model,
+    thumbnail_image: assets.thumbnail_english4u,
     source_code_link: "",
     code: ``,
     images: [],
@@ -339,7 +339,7 @@ const projects = [
       },
     ],
     image: assets.emotional_model,
-    thumbnail_image: assets.emotional_model,
+    thumbnail_image: assets.thumbnail_emotional_model,
     source_code_link:
       "https://colab.research.google.com/drive/1_riAM9IRZCIZBt7tvlr-VEIVn56hpqKr?usp=sharing",
     code: `
@@ -485,7 +485,7 @@ plt.show()
       },
     ],
     image: assets.la_bellezza_che_cura_mobile,
-    thumbnail_image: assets.emotional_model,
+    thumbnail_image: assets.la_bellezza_che_cura,
     source_code_link: "",
     code: ``,
     images: [],
@@ -554,7 +554,7 @@ plt.show()
       },
     ],
     image: assets.od_cover,
-    thumbnail_image: assets.emotional_model,
+    thumbnail_image: assets.thumbnail_od_cover,
     source_code_link: "",
     code: `
 
@@ -1417,85 +1417,55 @@ const italiano = {
   docente: "Giulia Montesi",
   argomenti: [
     {
-      titolo: "Emile Zola",
-      img: assets.ita_1,
-    },
-    {
-      titolo: "Il Verismo",
-      img: assets.ita_2,
-    },
-    {
       titolo: "Giovanni Verga",
       argomenti: [
         {
-          titolo: "Inizio e conclusione di Nedda",
+          titolo: "Nedda",
           spiegazione:
-            "Questo si riferisce all'inizio e alla conclusione del racconto 'Nedda' di Giovanni Verga. Il racconto narra la storia di una giovane donna di campagna che lotta contro le aspettative sociali e le difficoltà della vita rurale.",
+            "Nella Sicilia rurale, tra campi assolati e vigneti, viveva Nedda, una giovane contadina dalle mani callose e dal viso segnato dal lavoro e dalle difficoltà. Orfana di madre e con un padre malato, Nedda si trovava a dover sostenere da sola il peso di una vita fatta di sacrifici e privazioni. Il lavoro nei campi era duro e incessante, e Nedda, pur giovane, portava già sulle spalle il peso delle responsabilità familiari. La sua unica gioia era l’amore per Janu, un giovane bracciante con cui sognava di costruire un futuro migliore. Ma il destino sembrava accanirsi contro di lei: Janu si ammalò gravemente di malaria, lasciando Nedda in una solitudine ancora più profonda. Nedda si dedicava anima e corpo al lavoro per poter sopravvivere, ma la povertà e le avversità non davano tregua. Ogni giorno era una lotta contro la fame, la fatica e l’ingiustizia sociale che opprimeva i contadini. La sua vita era un susseguirsi di giornate tutte uguali, scandite dal lavoro nei campi e dalle cure per il padre malato. Nonostante le difficoltà, Nedda non perdeva mai del tutto la speranza. Il suo animo gentile e la sua forza interiore la spingevano a resistere, a non arrendersi di fronte alle avversità. Ma la sua storia era quella di tante altre donne della sua epoca: una vita di sofferenza e privazioni, in cui i sogni si infrangevano contro la dura realtà quotidiana. La novella 'Nedda' di Giovanni Verga offre un ritratto toccante e realistico della condizione dei contadini siciliani, della loro lotta per la sopravvivenza e della dignità con cui affrontavano le ingiustizie della vita. Nedda, con la sua semplice ma potente umanità, diventa simbolo della resilienza e della forza dei più umili.",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Verga_-_Vita_dei_campi%2C_Treves%2C_1897_%28page_94_crop%29.jpg/450px-Verga_-_Vita_dei_campi%2C_Treves%2C_1897_%28page_94_crop%29.jpg",
         },
         {
           titolo: "Rosso Malpelo",
           spiegazione:
-            "Rosso Malpelo è uno dei racconti più famosi di Giovanni Verga. Narra la storia di un ragazzo emarginato e discriminato dalla società a causa del suo aspetto e della sua origine sociale. Il racconto esplora temi come l'ingiustizia sociale, la povertà e la crudeltà umana.",
+            "Nel duro e desolato paesaggio delle cave di rena siciliane, viveva un ragazzo noto a tutti come Rosso Malpelo. Il soprannome derivava dai suoi capelli rossi, considerati segno di malvagità e sfortuna dalla superstiziosa comunità. Malpelo era un giovane dal carattere duro e scontroso, temprato da una vita di stenti e maltrattamenti. Abbandonato dalla madre e trattato con sospetto e ostilità dai compagni di lavoro, Malpelo si rifugiava in un guscio di indifferenza e rabbia. L'unica persona che mostrava un po' di umanità nei suoi confronti era il padre, Mastro Misciu, con cui lavorava nella cava. Ma quando Mastro Misciu morì in un tragico incidente, la solitudine di Malpelo divenne totale. Costretto a continuare a lavorare nella cava, Malpelo affrontava quotidianamente la brutalità dei suoi compagni e la durezza della vita sotterranea. Nonostante la sua giovane età, era già segnato da una profonda disillusione e un cinismo che lo rendevano ancor più emarginato. In questo ambiente ostile, Malpelo trovava un piccolo barlume di speranza nell'amicizia con un altro giovane lavoratore, Ranocchio. Tuttavia, anche questa fragile connessione venne spezzata dalla crudeltà del destino e dalle condizioni disumane di lavoro. Alla fine, Malpelo accetta il suo destino con una rassegnazione amara, consapevole che non c'è redenzione né speranza per chi, come lui, è nato sotto una cattiva stella. La novella 'Rosso Malpelo' di Giovanni Verga è un potente ritratto della miseria umana, dell'emarginazione sociale e della brutalità della vita dei più deboli, un'accusa contro l'ingiustizia e la mancanza di compassione nella società.",
           img: "https://cdn.skuola.net/news_foto/2018/verga-rosso-malpelo.jpg",
         },
         {
           titolo: "La roba",
           spiegazione:
-            "La Roba è un romanzo di Giovanni Verga che descrive la lotta per il potere e il possesso in una comunità siciliana. Il termine 'roba' si riferisce alla proprietà, in particolare alla terra e ai beni materiali, che diventa oggetto di desiderio e conflitto tra i personaggi.",
+            "Nel cuore della campagna siciliana, Mazzarò si ergeva come una figura emblematica di successo e avidità. Contadino divenuto uno dei più ricchi proprietari terrieri della zona, Mazzarò aveva dedicato ogni istante della sua vita all'accumulo di terre, bestiame e ricchezze materiali, che egli chiamava semplicemente 'la roba'. La sua ossessione per la proprietà era totalizzante. Ogni fazzoletto di terra, ogni animale rappresentava per lui un tassello di un impero costruito con il sudore della fronte e una determinazione incrollabile. Mazzarò non si fermava mai, controllando ogni aspetto della sua 'roba' con una cura maniacale, come se temesse che da un momento all'altro potesse sfuggirgli di mano. Ma l'immensa ricchezza non portava felicità. Isolato dalla comunità e privo di affetti sinceri, Mazzarò viveva in un mondo fatto di conti, bilanci e preoccupazioni incessanti. La sua unica compagnia erano i campi e il bestiame, che egli considerava più preziosi delle relazioni umane. Sul finire della sua vita, Mazzarò si rende conto dell'inutilità della sua esistenza dedicata solo alla 'roba'. In un momento di rabbia e disperazione, corre per i suoi campi gridando che la 'roba' dovrebbe seguirlo nella tomba, consapevole che non potrà portarla con sé nell'aldilà. La novella 'La roba' di Giovanni Verga è un potente ritratto dell'avidità e della solitudine, una riflessione amara sulla natura effimera delle ricchezze materiali e sulla perdita del valore umano nella corsa all'accumulo.",
           img: "https://www.giovannifighera.it/wp-content/uploads/2017/07/riassunti-sui-vinti-di-verga.jpg",
         },
         {
-          titolo: "La Giornata di Gesualdo",
+          titolo: "Mastro Don Gesualdo",
           spiegazione:
-            "Questo si riferisce al racconto 'La Giornata di Gesualdo' di Giovanni Verga. Il racconto segue la giornata di un contadino siciliano di nome Gesualdo e riflette sulle sue esperienze, emozioni e relazioni all'interno della sua comunità.",
-          img: "https://cdn.skuola.net/news_foto/2016/mastro-don-gesualdo.jpg",
-        },
-        {
-          titolo: "La morte di Gesualdo",
-          spiegazione:
-            "Questo si riferisce alla morte del personaggio Gesualdo nel racconto omonimo di Giovanni Verga. La morte di Gesualdo rappresenta un momento significativo nel racconto, con implicazioni emotive e simboliche per la storia e i personaggi coinvolti.",
+            "Nel cuore della Sicilia ottocentesca, a Vizzini, sorgeva la figura imponente di Gesualdo Motta, noto come Mastro-don Gesualdo. Partito da umili origini, Gesualdo si era fatto strada con il duro lavoro e l'ingegno, accumulando ricchezze e proprietà. Il suo matrimonio con Bianca Trao, nobile decaduta, doveva rappresentare il suo ingresso definitivo nella società aristocratica. Ma la vita di Gesualdo era tutt'altro che felice. Bianca, malata e infelice, non riusciva ad amare l'uomo che le aveva garantito un futuro sicuro, vedendolo sempre come un semplice parvenu. Le antiche famiglie nobili di Vizzini lo guardavano con disprezzo e sospetto, considerandolo un intruso che minava il loro secolare prestigio. Gesualdo, dal canto suo, lottava incessantemente per mantenere e aumentare il suo patrimonio, cercando di conquistare un posto nella società che lo rifiutava. La sua dedizione al lavoro e alla 'roba' lo isolava progressivamente, allontanandolo dalla famiglia e dagli affetti. Nemmeno sua figlia, Isabella, riusciva a colmare il vuoto affettivo che cresceva dentro di lui. Nel tentativo di trovare una legittimazione sociale e personale, Gesualdo si trovava sempre più solo, prigioniero delle sue ambizioni e del suo stesso successo. La sua parabola umana diventava così una tragica riflessione sulla solitudine e sull'inutilità della ricchezza quando mancano amore e riconoscimento.",
           img: "https://cdn.skuola.net/w1200h687/news_foto/2018/mastro-don-gesualdo-giovanni-verga.JPG",
         },
         {
-          titolo: "La prefazione ai Malavoglia",
+          titolo: "I Malavoglia",
           spiegazione:
-            "La prefazione ai Malavoglia è un'introduzione scritta da Giovanni Verga che precede il romanzo 'I Malavoglia'. In essa, Verga fornisce una panoramica sulla storia e i personaggi del romanzo, oltre a condividere le sue riflessioni sull'importanza della verità e della realtà nella narrativa.",
+            "Nel piccolo borgo marinaro di Aci Trezza, in Sicilia, viveva la famiglia Toscano, nota come i Malavoglia. Capeggiata dal vecchio padron 'Ntoni, la famiglia conduceva una vita semplice e faticosa, dedicata alla pesca e alla vendita dei lupini. La loro casa, la 'casa del nespolo', era il centro della loro esistenza e simbolo della loro unità. Un giorno, nella speranza di migliorare la loro condizione economica, padron 'Ntoni decide di investire tutti i risparmi in un carico di lupini da rivendere. Ma la sfortuna si abbatte sulla famiglia: la barca, la 'Provvidenza', naufraga, il carico va perduto e il giovane Bastianazzo, figlio di padron 'Ntoni, muore in mare. Questo evento segna l'inizio di una serie di disgrazie per i Malavoglia. La famiglia si trova sommersa dai debiti e vede sfumare il sogno di riscatto. I giovani 'Ntoni, Luca, Mena, Alessi e Lia, devono affrontare una realtà dura e ingiusta, che li allontana progressivamente dalla casa del nespolo e dai valori tradizionali della famiglia. 'Ntoni, il maggiore, finisce per cercare fortuna lontano, solo per ritrovarsi deluso e amareggiato. Tra sacrifici, dolori e perdite, i Malavoglia lottano per mantenere la loro dignità e la loro identità in un mondo che sembra ostile e indifferente. Il romanzo di Giovanni Verga diventa così una potente rappresentazione del destino umano, della lotta per la sopravvivenza e del valore della famiglia e delle radici.",
           img: "https://liberliber.it/wp-content/uploads/2015/03/i_malavoglia.jpg",
-        },
-        {
-          titolo: "L’inizio dei Malavoglia",
-          spiegazione:
-            "L'inizio dei Malavoglia si riferisce al primo capitolo del romanzo 'I Malavoglia' di Giovanni Verga. Questo capitolo stabilisce il contesto e presenta i personaggi principali della famiglia Malavoglia, situata in una piccola comunità di pescatori in Sicilia.",
-          img: "https://mydbook.giuntitvp.it/app/statics/contents/books/GIAC01_G0181306A/html/187/assets/images/187_a.jpg",
-        },
-        {
-          titolo: "L’addio di ‘Ntoni",
-          spiegazione:
-            "L’addio di ‘Ntoni si riferisce a un momento chiave nel romanzo 'I Malavoglia' di Giovanni Verga. 'Ntoni' è uno dei membri della famiglia Malavoglia e il suo addio rappresenta un punto di svolta nella narrazione, con conseguenze significative per la famiglia e la comunità.",
-          img: "https://diariodicharlotte.com/wp-content/uploads/2020/05/ntoni.jpg",
-        },
+        }
       ],
       img: assets.ita_3,
     },
     {
-      titolo: "La Scapigliatura",
-      spiegazione:
-        "La Scapigliatura è un movimento letterario e artistico che emerse in Italia nel XIX secolo. Si caratterizzava per il suo atteggiamento anticonformista e ribelle nei confronti della società e della cultura borghese dell'epoca.",
-      img: assets.ita_4,
-    },
-    {
       "titolo": "Giovanni Pascoli",
+      "temi": "il nido familiare, il mondo dei morti, l'importanza dell piccole cose, 'il fanciullo'",
+      "metrica": "fonosimbolismi, sinestesie, figure retoriche, analogie",
       "vita": "Giovanni Pascoli (1855-1912) è stato un poeta e accademico italiano, uno dei maggiori esponenti della letteratura italiana del tardo Ottocento e del primo Novecento. Nato a San Mauro di Romagna (oggi San Mauro Pascoli), Pascoli ebbe un'infanzia segnata da tragedie familiari, inclusa l'uccisione del padre, un evento che influenzò profondamente la sua poesia. Studioso appassionato e docente universitario, Pascoli esplorò temi come l'infanzia, la natura, il lutto e la memoria, combinando un linguaggio semplice e diretto con una profondità emotiva e simbolica. La sua visione poetica, influenzata dalla filosofia del simbolismo e del decadentismo, enfatizza l'importanza delle piccole cose e dei sentimenti nascosti.",
       "argomenti": [
         {
-          "titolo": "Il Fanciullino",
-          "spiegazione": "Il Fanciullino è una raccolta di poesie di Giovanni Pascoli che esplora il tema dell'infanzia e la perdita dell'innocenza. Le poesie riflettono sui ricordi dell'infanzia e sull'ingenuità della giovinezza. Secondo Pascoli, il poeta deve conservare dentro di sé il 'fanciullino', ovvero quella parte di sé che percepisce il mondo con meraviglia e stupore, capace di vedere oltre l'apparenza delle cose. Il fanciullino è simbolo di purezza e di una visione del mondo non contaminata dalla razionalità adulta. I temi fondamentali comprendono la nostalgia, la semplicità e l'importanza di mantenere una connessione con il proprio io interiore.",
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTza3r0ipK51oisyADHsMqJqI8b78rLxT2KH3yD5bCvzQ&s",
+          "titolo": "X Agosto",
+          "spiegazione": "X Agosto è una poesia di Giovanni Pascoli dedicata al ricordo della morte tragica di suo padre, avvenuta nell'agosto del 1867. La poesia esplora il tema del lutto e della perdita. Attraverso immagini simboliche e un tono malinconico, Pascoli esprime il dolore e l'ingiustizia della morte prematura, associandola a un evento cosmico come la pioggia di stelle cadenti di San Lorenzo. I temi fondamentali comprendono il dolore personale, l'ingiustizia della morte, la memoria e il legame con la figura paterna. Pascoli utilizza la natura come specchio delle sue emozioni interiori, creando un'atmosfera di tristezza e riflessione.",
+          "img": "https://www.leggere-facile.it/wp-content/uploads/2018/08/x_agosto-700x400.jpg",
           "testi": [
             {
-              "titolo": "Il Fanciullino - Estratto",
-              "testo": "È dentro noi un fanciullino che non solo ha brividi... È un fanciullino che continua a stupirsi del mondo."
+              "titolo": "X Agosto - Estratto",
+              "testo": "San Lorenzo, io lo so perché tanto di stelle per l'aria tranquilla arde e cade, perché sì gran pianto nel concavo cielo sfavilla."
             }
           ]
         },
@@ -1511,17 +1481,6 @@ const italiano = {
           ]
         },
         {
-          "titolo": "X Agosto",
-          "spiegazione": "X Agosto è una poesia di Giovanni Pascoli dedicata al ricordo della morte tragica di suo padre, avvenuta nell'agosto del 1867. La poesia esplora il tema del lutto e della perdita. Attraverso immagini simboliche e un tono malinconico, Pascoli esprime il dolore e l'ingiustizia della morte prematura, associandola a un evento cosmico come la pioggia di stelle cadenti di San Lorenzo. I temi fondamentali comprendono il dolore personale, l'ingiustizia della morte, la memoria e il legame con la figura paterna. Pascoli utilizza la natura come specchio delle sue emozioni interiori, creando un'atmosfera di tristezza e riflessione.",
-          "img": "https://www.leggere-facile.it/wp-content/uploads/2018/08/x_agosto-700x400.jpg",
-          "testi": [
-            {
-              "titolo": "X Agosto - Estratto",
-              "testo": "San Lorenzo, io lo so perché tanto di stelle per l'aria tranquilla arde e cade, perché sì gran pianto nel concavo cielo sfavilla."
-            }
-          ]
-        },
-        {
           "titolo": "Temporale",
           "spiegazione": "Temporale è una poesia di Giovanni Pascoli che descrive l'atmosfera e le emozioni durante un temporale estivo. La poesia evoca sensazioni di ansia e meraviglia di fronte alla potenza della natura. Pascoli utilizza immagini vivide e un ritmo incalzante per trasmettere l'immediatezza e l'intensità dell'evento naturale. I temi fondamentali comprendono la forza della natura, il timore reverenziale verso gli elementi naturali e l'inevitabile senso di piccolezza dell'uomo di fronte a tali fenomeni. La poesia mette in risalto la capacità della natura di evocare emozioni profonde e complesse.",
           "img": "https://www.meteo.expert/wp-content/uploads/2018/11/iStock_000028466382_Medium.jpg",
@@ -1529,17 +1488,6 @@ const italiano = {
             {
               "titolo": "Temporale - Estratto",
               "testo": "Un bubbolìo lontano... Rosseggia l'orizzonte, come affocato, a mare; nero di pece, a monte; sembra voglia piovere e non piovere."
-            }
-          ]
-        },
-        {
-          "titolo": "Novembre",
-          "spiegazione": "Novembre è una poesia di Giovanni Pascoli che riflette sull'autunno e sulle sue associazioni con la malinconia e la fine. La poesia evoca immagini di tristezza e desolazione. Pascoli usa il mese di novembre come metafora del declino e della morte, in contrasto con la primavera che simboleggia la rinascita e la speranza. I temi fondamentali comprendono la transitorietà della vita, la ciclicità delle stagioni e la riflessione sulla morte. Pascoli riesce a creare un'atmosfera di quieta tristezza, facendo emergere il senso di inevitabile passaggio del tempo.",
-          "img": "https://maremosso.lafeltrinelli.it/media/qtlf0f2s/novembre_banner.jpg?anchor=center&mode=crop&width=1500&height=784&rnd=133432435363500000",
-          "testi": [
-            {
-              "titolo": "Novembre - Estratto",
-              "testo": "Gèmmea l'aria, il sole così chiaro che tu ricerchi gli albicocchi in fiore, e del prunalbo l'odorino amaro senti nel cuore..."
             }
           ]
         },
@@ -1553,18 +1501,72 @@ const italiano = {
               "testo": "E cielo e terra si mostrò qual era: la terra ansante, livida, in sussulto; il cielo ingombro, tragico, disfatto..."
             }
           ]
-        }
+        },
+        {
+          "titolo": "Il tuono",
+          "spiegazione": "Segue idealmente 'Il lampo', descrivendo il rumore del tuono che risuona dopo il fulmine. La poesia evidenzia l’elemento sonoro della tempesta e il senso di attesa e di inquietudine che provoca.",
+          "img": "https://www.libriantichionline.com/typo3temp/pics/ebf48fe9bf.jpg",
+          "testi": [
+            {
+              "titolo": "Il lampo - Estratto",
+              "testo": "E cielo e terra si mostrò qual era: la terra ansante, livida, in sussulto; il cielo ingombro, tragico, disfatto..."
+            }
+          ]
+        },
+        {
+          "titolo": "Novembre",
+          "spiegazione": "Novembre è una poesia di Giovanni Pascoli che riflette sull'autunno e sulle sue associazioni con la malinconia e la fine. In questo componimento poetico si evince l'influenza della poesia di Giosuè Carducci. La poesia evoca immagini di tristezza e desolazione. Pascoli usa il mese di novembre come metafora del declino e della morte, in contrasto con la primavera che simboleggia la rinascita e la speranza. I temi fondamentali comprendono la transitorietà della vita, la ciclicità delle stagioni e la riflessione sulla morte. Pascoli riesce a creare un'atmosfera di quieta tristezza, facendo emergere il senso di inevitabile passaggio del tempo.",
+          "img": "https://maremosso.lafeltrinelli.it/media/qtlf0f2s/novembre_banner.jpg?anchor=center&mode=crop&width=1500&height=784&rnd=133432435363500000",
+          "testi": [
+            {
+              "titolo": "Novembre - Estratto",
+              "testo": "Gèmmea l'aria, il sole così chiaro che tu ricerchi gli albicocchi in fiore, e del prunalbo l'odorino amaro senti nel cuore..."
+            }
+          ]
+        },
+        {
+          "titolo": "La poetica del fanciullino",
+          "spiegazione": "Il Fanciullino è una raccolta di poesie di Giovanni Pascoli che esplora il tema dell'infanzia e la perdita dell'innocenza. Le poesie riflettono sui ricordi dell'infanzia e sull'ingenuità della giovinezza. Secondo Pascoli, il poeta deve conservare dentro di sé il 'fanciullino', ovvero quella parte di sé che percepisce il mondo con meraviglia e stupore, capace di vedere oltre l'apparenza delle cose. Il fanciullino è simbolo di purezza e di una visione del mondo non contaminata dalla razionalità adulta. I temi fondamentali comprendono la nostalgia, la semplicità e l'importanza di mantenere una connessione con il proprio io interiore.",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTza3r0ipK51oisyADHsMqJqI8b78rLxT2KH3yD5bCvzQ&s",
+          "testi": [
+            {
+              "titolo": "Il Fanciullino - Estratto",
+              "testo": "È dentro noi un fanciullino che non solo ha brividi... È un fanciullino che continua a stupirsi del mondo."
+            }
+          ]
+        },
+        {
+          "titolo": "Raccolta poetica Myricae",
+          "spiegazione": "Myricae, pubblicata nel 1891, è una delle raccolte poetiche più significative di Giovanni Pascoli. Il titolo significa tamerici. All'interno di Myricae troviamo alcune delle poesie più celebri di Pascoli, come: lavandare, il lampo, il tuono, X Agosto, Novembre",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTza3r0ipK51oisyADHsMqJqI8b78rLxT2KH3yD5bCvzQ&s",
+          "testi": [
+            {
+              "titolo": "Il Fanciullino - Estratto",
+              "testo": "È dentro noi un fanciullino che non solo ha brividi... È un fanciullino che continua a stupirsi del mondo."
+            }
+          ]
+        },
+        
+        
       ],
       "img": assets.ita_5
     },
     {
       titolo: "Gabriele D’Annunzio",
+      temi: "vittoria mutilata, estetismo, il superuomo",
+      metrica: "totalmente libera, essa non è cioè soggetta ad alcuno schema tradizionale",
       argomenti: [
         {
           titolo: "Pastori",
           spiegazione:
-            "Pastori è un'opera teatrale di Gabriele D'Annunzio che esplora temi di amore, passione e tradimento nella vita rurale italiana. La pièce è nota per la sua sensualità e la sua rappresentazione della natura.",
+            "L'arrivo dell'autunno riporta alla memoria del poeta le immagini della sua terra d'Abruzzo. Là ha vissuto l'infanzia e là, in questa stagione, ha assistito tante volte alla transumanza, cioè a quella migrazione stagionale dei pastori che conducono le greggi dai montani verso la pianura. Il ricordo dei pastori riempie di nostalgia l'animo del poeta: li rivede mentre lasciano gli alpeggi e si incamminano lenti lungo i sentieri erbosi che portano fino al mare, gli stessi sentieri che per secoli hanno percorso anche i loro antenati; li immagina mentre si fermano a bere alle fonti alpestri e poi riprendono il cammino appogiandosi al bastone e mentre s'illuminano di gioia, intravedono il lontano luccichio del mare.",
           img: "https://www.filastrocche.it/contenuti/wp-content/uploads/2018/05/pastore-550.jpg",
+        },
+        {
+          titolo: "Il superuomo D'annunzio",
+          spiegazione:
+            "In D'Annunzio il superuomo è il poeta Vate, capace di essere una guida e un profeta per il paese, che vive una vita originale, piena di emozioni e passioni in una dimensione estetica, in cui la virtù è consacrata all'arte.",
+          img: "https://gtwallpaper.org/sites/default/files/wallpaper/175002/superman-2020-4k-wallpapers-175002-387809-9698616.png",
         },
       ],
       img: assets.ita_6,
