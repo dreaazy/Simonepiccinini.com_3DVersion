@@ -1593,12 +1593,6 @@ const italiano = {
           img: "https://cdn.studenti.stbm.it/images/2021/04/28/il-treno-ha-fischiato-orig.jpeg",
         },
         {
-          titolo: "Ciaula scopre la luna",
-          spiegazione:
-            "Ciaula scopre la luna è un racconto di Luigi Pirandello che narra la storia di un ragazzo pastore che sogna di vedere la luna per la prima volta. Il racconto esplora il tema dell'aspirazione alla bellezza e alla libertà.",
-          img: "https://cdn.studenti.stbm.it/images/2021/06/10/ciaula-scopre-la-luna-orig.jpeg",
-        },
-        {
           titolo: "Il Fu Mattia Pascal",
           spiegazione:
             "Il Fu Mattia Pascal è un romanzo di Luigi Pirandello che segue le vicende di Mattia Pascal, un uomo che decide di cambiare identità dopo essere stato dato per morto. Il romanzo esplora temi di identità, libertà e alienazione.",
@@ -1607,7 +1601,7 @@ const italiano = {
         {
           titolo: "La patente",
           spiegazione:
-            "La patente è un racconto di Luigi Pirandello che racconta la storia di un uomo che si mette nei guai dopo aver ottenuto una patente di guida. Il racconto esplora il tema della responsabilità e delle conseguenze delle proprie azioni.",
+            "La storia affronta il dramma di Rosario Chiarchiaro, un impiegato accusato di essere uno iettatore, che chiede una 'patente' ufficiale per sfruttare la sua cattiva reputazione. Il giudice D’Andrea, pur non credendo alla sfortuna, deve affrontare la situazione paradossale. Chiarchiaro, invece di difendersi, accetta la 'maschera' imposta dalla società per ottenere vantaggi economici. La novella, trasformata in una commedia di successo, fu interpretata da Totò nel film 'Questa è la vita' (1954). Esprime temi di identità, maschere sociali e la libertà contraddittoria derivante dall'accettazione di un ruolo imposto dagli altri.",
           img: "https://www.pirandelloweb.com/wp-content/uploads/2016/12/la-patente-novella.jpg",
         },
       ],
@@ -1629,12 +1623,6 @@ const italiano = {
       titolo: "Giuseppe Ungaretti",
       argomenti: [
         {
-          titolo: "In memoria",
-          spiegazione:
-            "In memoria è una poesia di Giuseppe Ungaretti che riflette sul tema della guerra e del sacrificio. La poesia evoca sentimenti di dolore e commozione di fronte alla perdita di vite umane.",
-          img: "https://www.ilsecondomestiere.org/wp-content/uploads/2021/01/in-memoria-ungaretti.jpg",
-        },
-        {
           titolo: "Veglia",
           spiegazione:
             "Veglia è una poesia di Giuseppe Ungaretti che esplora il tema della solitudine e della notte. La poesia cattura l'atmosfera silenziosa e misteriosa della notte, invitando il lettore a riflettere sulla propria esistenza.",
@@ -1647,28 +1635,21 @@ const italiano = {
           img: "https://cdn.studenti.stbm.it/images/2022/03/22/soldati_600x400.jpeg",
         },
         {
-          titolo: "Fratelli",
-          spiegazione:
-            "Fratelli è una poesia di Giuseppe Ungaretti che riflette sul tema dell'amicizia e della fratellanza. La poesia esplora i legami profondi tra gli uomini e l'importanza della solidarietà nelle situazioni di crisi e di guerra.",
-          img: "https://www.libriantichionline.com/typo3temp/pics/1c63073796.jpg",
-        },
-        {
           titolo: "San Martino del Carso",
           spiegazione:
             "San Martino del Carso è una poesia di Giuseppe Ungaretti che commemora i soldati caduti durante la Prima Guerra Mondiale. La poesia evoca immagini di desolazione e morte, riflettendo sulla tragedia della guerra e sul sacrificio dei giovani soldati.",
           img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWhuyLXOVKBPHtM-MC8TL_dVeoL1YXH8hEdb5ejmFKdx8xJBGp1uBUYvT2ipGiKxjezzruOMrkUBSdcGdX2vD5Dsqv6W7nPvEuc3N8lMGjdxKjNXLvgrZv4ywz-InpEc8TB0Tj0ABEsfQ/w1200-h630-p-k-no-nu/san+martino+del+carso2.jpg",
         },
         {
-          titolo: "Mattina",
+          titolo: "Fratelli",
           spiegazione:
-            "Mattina è una poesia di Giuseppe Ungaretti che celebra la bellezza e la rinascita della natura. La poesia evoca immagini di luce e speranza, invitando il lettore a contemplare la meraviglia del nuovo giorno.",
-          img: "https://www.ilditonellocchio.it/wp-content/uploads/2015/01/mattina-di-ungaretti.jpg",
+            "Fratelli è una poesia di Giuseppe Ungaretti che riflette sul tema dell'amicizia e della fratellanza. La poesia esplora i legami profondi tra gli uomini e l'importanza della solidarietà nelle situazioni di crisi e di guerra.",
+          img: "https://www.libriantichionline.com/typo3temp/pics/1c63073796.jpg",
         },
         {
-          titolo: "Natale",
-          spiegazione:
-            "Natale è una poesia di Giuseppe Ungaretti che riflette sul significato del Natale e sulla sua importanza nella tradizione cristiana. La poesia evoca sentimenti di gioia e spiritualità, celebrando la nascita di Gesù Cristo.",
-          img: "https://www.studentville.it/app/uploads/2016/12/c4b43ae017af4001c5193d310bf00942.jpg",
+          titolo: "Sono una creatura",
+          spiegazione:  " 'Sono una creatura' di Giuseppe Ungaretti esplora il dolore e la fragilità dell'esistenza umana. In questa poesia, l'autore riflette sulla condizione dell'uomo, vulnerabile e solitario di fronte alla sofferenza e alla morte. La parola 'creatura' sottolinea la condizione precaria dell'uomo, una creatura che sente intensamente il proprio essere effimero e il peso del dolore. Ungaretti, con il suo linguaggio essenziale e potente, esprime la struggente consapevolezza della caducità della vita e la ricerca di un significato nell'esperienza della sofferenza.",
+          img: "https://blogger.googleusercontent.com/img/a/AVvXsEim-BpX_s5AVpYGTHZoafqpdRcRm-H2AbO3XyQ6CgZ4YUjnzTpe1nrVqr8Es1SJ2jgEibXknIZ1JI6EjRAUv4OlUUO0zyPGCE12XeIH8w6QB3Mm8D4EMT64u4ExNgA6K5VFrniEjvgvPXh8BjkELd9zyz-oBuWRyeA9CUlv-8A0G26re08U5cIVFjtY",
         },
       ],
       img: assets.ita_9,
