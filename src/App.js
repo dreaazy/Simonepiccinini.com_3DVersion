@@ -11,6 +11,7 @@ import {
   Experience,
   TopicDetail,
   StarsCanvas,
+  Header
 } from "./components";
 
 import { Pcto, Program, Projects, ErrorPage, About, Civica } from "./pages";
@@ -19,26 +20,16 @@ import ProjectDetail from "./components/ProjectDetail"; // Import the ProjectDet
 
 function App() {
   return (
-    <div className="relative z-0 bg-primary bg-hero-pattern bg-no-repeat">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-        <Navbar />
-      </div>
-
+    <div className="relative z-0 bg-primary">
+      <Header/>
       <Routes>
         <Route
           exact
           path="/"
           element={
             <>
-              <Hero />
+              
               <About />
-              {/* Uncomment these components as needed */}
-              {/* <About /> */}
-              {/* <Experience /> */}
-              {/*  <Experience /> */}
-              {/*  <Tech />
-              <Works />
-              <Feedbacks /> */}
             </>
           }
         />

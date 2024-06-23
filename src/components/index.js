@@ -10,7 +10,8 @@ import ProjectCard from "./ProjectCard";
 import ProjectDetail from "./ProjectDetail";
 import TopicDetail from "./TopicDetail";
 import useImageLoader from "./useImageLoader";
+import Header from "./Header";
 
-export {useImageLoader, Navbar,EarthCanvas, HeadScene, Hero, Tech, Contact, Experience, ProjectCard, TopicDetail, ProjectDetail, StarsCanvas};
+export {useImageLoader, Navbar,EarthCanvas, HeadScene, Hero, Tech, Contact, Experience, ProjectCard, TopicDetail, ProjectDetail, StarsCanvas, Header};
 
 
