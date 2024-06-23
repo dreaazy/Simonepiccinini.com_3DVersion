@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 import useImageLoader from "./useImageLoader";
 import remarkGfm from "remark-gfm";
 
 const ProjectDetail = () => {
   const { projectName } = useParams();
   const [isLoading, setIsLoading] = useState(true);
-  const project = projects.find((p) => p.name === projectName);
+  const [isZoomed, setIsZoomed] = useState(false);
+  const [zoomedContent, setZoomedContent] = useState(null);
 
+  const project = projects.find((p) => p.name === projectName);
   const mainImage = project?.image || "";
   const galleryImages = project?.images?.map((image) => image.url) || [];
   const imageUrls = [mainImage, ...galleryImages];
@@ -30,11 +31,20 @@ const ProjectDetail = () => {
     }
   }, [loaded]);
 
+  const handleZoom = (content) => {
+    setZoomedContent(content);
+    setIsZoomed(true);
+  };
+
+  const closeZoom = () => {
+    setIsZoomed(false);
+    setZoomedContent(null);
+  };
+
   if (isLoading) {
     return (
       <div className="spinner-container">
         <div className="spinner"></div>
-        {/* <p>Loading images... {loadCount} / {imageUrls.length}</p> */}
       </div>
     );
   }
@@ -102,7 +112,6 @@ const ProjectDetail = () => {
 
       {project.code && (
         <div className="mt-10 bg-[#171D3F] p-5 rounded-md">
-          <h3 className="text-white font-bold text-[24px]">Code</h3>
           <ReactMarkdown
             className="markdown"
             children={project.code}
@@ -169,7 +178,12 @@ const ProjectDetail = () => {
           <h3 className="text-white font-bold text-[24px]">Images</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-5">
             {project.images.map((image, index) => (
-              <div key={index} className="relative w-full h-[300px] p-5">
+              <motion.div
+                key={index}
+                className="relative w-full h-[300px] p-5 cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                onClick={() => handleZoom(<img src={image.url} alt={`project_image_${index}`} className="w-full h-full object-cover rounded-2xl" />)}
+              >
                 <img
                   src={image.url}
                   alt={`project_image_${index}`}
@@ -178,7 +192,7 @@ const ProjectDetail = () => {
                 <p className="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white p-2 rounded">
                   {image.text}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -189,7 +203,12 @@ const ProjectDetail = () => {
           <h3 className="text-white font-bold text-[24px]">Videos</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-5">
             {project.videos.map((gif, index) => (
-              <div key={index} className="relative w-full h-[300px] p-5">
+              <motion.div
+                key={index}
+                className="relative w-full h-[300px] p-5 cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                onClick={() => handleZoom(<img src={gif.url} alt={`project_gif_${index}`} className="w-full h-full object-cover rounded-2xl" />)}
+              >
                 <img
                   src={gif.url}
                   alt={`project_gif_${index}`}
@@ -198,32 +217,32 @@ const ProjectDetail = () => {
                 <p className="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white p-2 rounded">
                   {gif.text}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       )}
 
-      {project.downloads && project.downloads.length > 0 && (
-        <div className="mt-10">
-          <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-5">
-            {project.downloads.map((download, index) => (
-              <div
-                key={index}
-                className="relative w-full h-[100px] p-5 flex items-center justify-center"
-              >
-                <a
-                  href={download.source}
-                  download
-                  className="text-blue-500 font-bold"
-                >
-                  {download.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isZoomed && (
+          <motion.div
+            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closeZoom}
+          >
+            <motion.div
+              className="w-auto h-auto max-w-3xl max-h-[90vh] overflow-auto"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+            >
+              {zoomedContent}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.section>
   );
 };

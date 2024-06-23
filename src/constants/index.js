@@ -133,8 +133,8 @@ const aboutMe = {
     },
     {
       name: "Science",
-      description: "I have a profound interest in science, especially in the fields of physics and mathematics. My curiosity about the universe and the laws that govern it drives me to constantly seek out new knowledge. I enjoy reading about the latest scientific discoveries and theories, and I often find myself pondering over complex scientific problems. This passion for science is not just about acquiring knowledge; it also deeply influences my analytical thinking and problem-solving skills. Understanding the intricacies of life and the universe fuels my curiosity and inspires me to keep learning and exploring.",
-      img: ""
+      description: "I have a profound interest in science, especially in the fields of physics and mathematics. My curiosity about the universe and the laws that govern it drives me to constantly seek out new knowledge. I enjoy reading about the latest scientific discoveries and theories. This passion for science is not just about acquiring knowledge; it also deeply influences my analytical thinking and problem-solving skills. Understanding the intricacies of life and the universe fuels my curiosity and inspires me to keep learning and exploring.",
+      img: assets.littlestar
     }
   ]
 };
@@ -246,7 +246,7 @@ const projects = [
     materia: "informatica",
     description:
       "",
-    short_description: "Platform for booking and managing car rentals.",
+    short_description: "progetto dedicato alla collaborazione intensiva su un progetto comune",
     tags: [
       {
         name: "informatica",
@@ -255,8 +255,34 @@ const projects = [
     ],
     image: assets.hackaton,
     thumbnail_image: assets.thumbnail_hackaton,
-    source_code_link: "https://github.com/",
-    code: ``,
+    source_code_link: "",
+    code: `### Introduzione
+Per l'anno scolastico 2023/24, l'Istituto Superiore Volterra Elia di Ancona ha organizzato un hackathon dedicato agli studenti dei corsi di informatica delle scuole superiori della regione Marche. Dopo un corso di preparazione condotto dai nostri docenti, abbiamo svolto una selezione interna per scegliere sei studenti che avrebbero rappresentato la nostra scuola nella competizione. Sono stato uno dei sei selezionati.
+
+### La Sfida
+Il tema della sfida era il seguente:
+
+Gli studenti spesso hanno idee e progetti che richiedono competenze multidisciplinari o desiderano approfondire argomenti specifici insieme ai loro pari, anche provenienti da altre città. Le squadre partecipanti dovevano sviluppare un prototipo di piattaforma web che facilitasse l'interazione tra studenti di tutta Italia. L'obiettivo era creare un ambiente in cui gli studenti potessero collaborare, condividere idee e competenze, formando team interdisciplinari per realizzare progetti o esplorare tematiche di loro interesse. 
+
+I criteri di valutazione per ogni gruppo erano:
+
+- Chiarezza espositiva
+- Innovazione tecnologica
+- Validità commerciale
+- User Experience
+- Attinenza
+
+Il tempo a disposizione era di 24 ore.
+
+### Il Nostro Progetto
+Il nostro gruppo ha deciso di sviluppare un "social network" chiamato "Bynd", che permetteva agli utenti finali di:
+
+- Registrarsi indicando le proprie specializzazioni
+- Creare progetti riguardanti una o più discipline
+- Proporre, tramite un algoritmo di intelligenza artificiale, progetti di potenziale interesse per ogni utente
+- Collaborare ai progetti tramite una chat dedicata e uno spazio di condivisione dei file
+
+In questo modo, "Bynd" si proponeva di essere una piattaforma completa per la collaborazione e la condivisione di idee tra studenti di tutta Italia.`,
     images: [
       {
         url: assets.h1,
@@ -289,7 +315,7 @@ const projects = [
     name: "WeChat",
     materia: "informatica",
     description: "",
-    short_description: "WebChat",
+    short_description: "Piattaforma online di messaggistica",
     tags: [
       {
         name: "informatica",
@@ -299,14 +325,103 @@ const projects = [
     image: assets.wechat,
     thumbnail_image: assets.thumbnail_wechat,
     source_code_link: "",
-    code: ``,
-    images: [],
+    code: `### Progetto WebChat
+
+Questo progetto consiste in una piattaforma di webchat che permette alle persone di registrarsi e comunicare tra loro tramite messaggi. Le immagini caricate mostrano l'interfaccia utente di questo sito web, evidenziando le principali funzionalità e il design dell'applicazione.
+
+#### Funzionalità Principali
+
+1. **Registrazione e Login**:
+   - Gli utenti possono registrarsi sulla piattaforma e creare un profilo personale.
+   - Dopo la registrazione, possono accedere alla chat utilizzando le loro credenziali.
+
+2. **Lista Contatti**:
+   - Gli utenti possono visualizzare la lista dei contatti con cui hanno chattato di recente.
+   - La lista dei contatti mostra il nome, l'immagine del profilo e lo stato online degli altri utenti.
+
+3. **Interfaccia di Chat**:
+   - La schermata di chat permette agli utenti di inviare e ricevere messaggi in tempo reale.
+   - I messaggi inviati e ricevuti sono visualizzati con l'orario, per facilitare la conversazione.
+
+4. **Ricerca Contatti**:
+   - Gli utenti possono cercare nuovi contatti utilizzando la barra di ricerca.
+   - La sezione "Discover" permette di esplorare nuovi utenti e connettersi con loro.
+
+5. **Gestione del Profilo**:
+   - Gli utenti possono accedere alla propria pagina profilo per visualizzare e modificare le informazioni personali.
+   - È possibile cambiare l'immagine del profilo, l'email e il numero di telefono.`,
+    images: [
+      {
+        url: assets.webchat1,
+        text: "",
+      },
+      {
+        url: assets.webchat2,
+        text: "",
+      }
+    ],
+  },
+  {
+    name: "Lavafall",
+    materia: "informatica",
+    description: "",
+    short_description: "Gioco interattivo",
+    tags: [
+      {
+        name: "informatica",
+        color: "green-text-gradient",
+      },   
+    ],
+    image: assets.lf_logo,
+    thumbnail_image: assets.lf_sfondo,
+    source_code_link: "",
+    code: `# Descrizione del Gioco
+
+Il protagonista del gioco si trova intrappolato in una gabbia sospesa sopra un mare di lava. Dopo un conto alla rovescia di 3 secondi, la gabbia si apre e la lava comincia a salire minacciosamente. Per sopravvivere, il personaggio deve saltare sempre più in alto, utilizzando delle piattaforme fluttuanti nel cielo. Con l'aumentare dell'altezza, le piattaforme cambiano forma e la velocità di risalita della lava aumenta.
+
+## Cambiamenti durante il Gioco
+
+- **Oltrepassati i 10.000 punti**: 
+    - Lo sfondo si trasforma in un cielo con nuvole.
+    - Le piattaforme diventano elicotteri.
+- **Superati i 35.000 punti**:
+    - Lo sfondo diventa lo spazio profondo.
+    - Le piattaforme si trasformano in navicelle spaziali.
+
+## Modalità di Gioco
+
+Il gioco è infinito e continua finché il giocatore non cade nella lava. Al termine della partita, viene mostrato il punteggio ottenuto insieme a una classifica dei punteggi precedenti, ordinata in modo decrescente dal più alto al più basso. La classifica include anche:
+
+- I nickname dei giocatori
+- I numeri delle partite
+- La data e ora di ogni partita
+`,
+    images: [
+      {
+        url: assets.lf_classifica,
+        text: "",
+      },
+      {
+        url: assets.lf_entry,
+        text: "",
+      },
+      {
+        url: assets.lf_ingame,
+        text: "",
+      },
+    ],
+    videos: [
+      {
+        url: assets.lf_sfondo,
+        text: "",
+      },
+    ],
   },
   {
     name: "Giorno Libero",
     materia: "informatica",
     description: 
-    " L’IIS Marconi Pieralisi somministra annualmente, nel mese di Agosto, un questionario destinato a tutti i suoi docenti per ottenere le loro preferenze riguardo il giorno della settimana libero, che potranno avere all’inizio del prossimo anno scolastico. È presente un responsabile dotato delle preferenze storiche ed attuali dei docenti su un foglio Excel, e che ha il ruolo di analizzare i dati manualmente e assegnare quindi il giorno libero a ciascun professore. L'obiettivo di questo progetto è quello di sostituire il vecchio questionario ed aiutare il responsabile nella scelta definitiva ed assegnazione del giorno libero di ogni docente.",
+    "",
     short_description: "Progetto di classe dell'anno 2023/2024",
     tags: [
       {
@@ -317,7 +432,23 @@ const projects = [
     image: assets.gglibero,
     thumbnail_image: assets.thumbnail_gglibero,
     source_code_link: "",
-    code: ``,
+    code: `### Progetto di Ottimizzazione delle Preferenze dei Giorni Liberi per i Docenti
+
+L'IIS Marconi Pieralisi, ogni anno nel mese di agosto, somministra un questionario destinato a tutti i suoi docenti per raccogliere le loro preferenze riguardo al giorno della settimana libero che desiderano per l'inizio del prossimo anno scolastico. Fino ad ora, un responsabile analizzava manualmente i dati raccolti tramite un foglio Excel contenente sia le preferenze storiche che quelle attuali dei docenti, e procedeva con l'assegnazione del giorno libero per ciascun insegnante.
+
+#### Obiettivo del Progetto
+
+L'obiettivo di questo progetto è sostituire il vecchio sistema di raccolta delle preferenze e supportare il responsabile nell'analisi e nell'assegnazione dei giorni liberi. Il nuovo sistema mira a automatizzare il processo, migliorare l'efficienza e ridurre al minimo gli errori, rendendo l'intero procedimento più fluido e accurato.
+
+#### La Mia Parte nel Progetto
+
+Nel contesto di questo progetto, mi sono occupato della pagina di assegnazione, ovvero la pagina utilizzata dagli amministratori per assegnare i giorni liberi ai docenti. Questa pagina è stata progettata per essere intuitiva e funzionale, permettendo agli amministratori di:
+
+- Visualizzare le preferenze storiche e attuali di ciascun docente.
+- Analizzare in modo semplice e veloce i dati raccolti.
+- Assegnare i giorni liberi in modo equo e basato sulle preferenze espresse.
+
+Ho sviluppato la pagina di assegnazione con un'interfaccia user-friendly, integrando strumenti e funzionalità che semplificano il processo decisionale. Grazie a questo nuovo sistema, gli amministratori possono ora gestire le preferenze dei docenti in maniera più efficiente, garantendo al contempo la soddisfazione delle esigenze individuali di ogni insegnante.`,
     images: [
       {
         url: assets.assegnazione,
@@ -340,7 +471,11 @@ const projects = [
     image: assets.english4u,
     thumbnail_image: assets.thumbnail_english4u,
     source_code_link: "",
-    code: ``,
+    code: `### Esperienza nel Progetto English4U "SOW – Spread yOur wings"
+
+Durante il mio quarto anno di scuola superiore, ho avuto l'opportunità di partecipare al progetto English4U "SOW – Spread yOur wings". Questo progetto, organizzato in collaborazione con l’IIS “Vanvitelli Stracca Angelini” e il Liceo Artistico “Mannucci” di Ancona, ha offerto a me e ad altri 14 studenti un corso di formazione gratuito mirato al conseguimento della Certificazione di Lingua Inglese a livello B2, Cambridge FCE.
+
+Ho frequentato 72 ore di lezioni in aula, in orario extra-curriculare, da fine Gennaio a metà Maggio. Il percorso includeva anche una preparazione specifica per l’esame FCE, che è durata 8 ore. Grazie all'impegno e al supporto dei docenti, sono riuscito a ottenere la certificazione con un punteggio di 175, che è stato per me un grande traguardo e una conferma delle mie competenze linguistiche.`,
     images: [],
   },
   {
@@ -355,8 +490,8 @@ const projects = [
         color: "pink-text-gradient",
       },      
     ],
-    image: assets.english4u,
-    thumbnail_image: assets.thumbnail_english4u,
+    image: assets.campionatoEnglish,
+    thumbnail_image: assets.thumbnail_campionatoEnglish,
     source_code_link: "",
     code: ``,
     images: [],
@@ -511,7 +646,7 @@ plt.show()
     name: "Object Detection Model",
     materia: "IA",
     description: "This project demonstrates using YOLOv5 for real-time object detection. YOLOv5, \"You Only Look Once,\" is a fast algorithm that predicts bounding boxes and class probabilities in images. We install necessary dependencies, load a pre-trained model, and perform object detection on a sample image and real-time webcam feed. Due to an AMD GPU (Radeon RX 470), CUDA is not used, defaulting to CPU processing with an Intel(R) Core(TM) i5-9400F. Despite slower processing, YOLOv5's functionality and accuracy remain unaffected, showcasing its capabilities in both static and dynamic scenarios.",
-    short_description: "Object detection model",
+    short_description: "AI Model to recognize object in live",
     tags: [
       {
         name: "intelligenza artificiale",

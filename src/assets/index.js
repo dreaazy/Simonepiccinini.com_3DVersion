@@ -85,7 +85,12 @@ import {
   video_dim,
   image_dim,
   od_cover,
-  thumbnail_od_cover
+  thumbnail_od_cover,
+  campionatoEnglish,
+  thumbnail_campionatoEnglish,
+
+  webchat1,
+  webchat2
 
 
 } from "./projects";
@@ -127,14 +132,31 @@ import {
   music_kid,
   music_teen,
   technology_kid,
-  sport
+  sport,
+  littlestar
 } from "./aboutme";
 
+import {
+  lf_classifica,
+  lf_entry,
+  lf_sfondo,
+  lf_ingame,
+  lf_logo
+} from "./lavafall";
+
 export {
+  lf_classifica,
+  lf_entry,
+  lf_sfondo,
+  lf_ingame,
+  lf_logo,
+
+  
   music_kid,
   music_teen,
   technology_kid,
   sport,
+  littlestar,
   sto_1,
   sto_2,
   sto_3,
@@ -245,4 +267,10 @@ export {
   jobit,
   tripguide,
   LogoWeb,
+
+  campionatoEnglish,
+  thumbnail_campionatoEnglish,
+  
+  webchat1,
+  webchat2
 };

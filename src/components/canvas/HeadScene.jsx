@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState} from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
@@ -17,11 +17,11 @@ const Head = ({ isMobile }) => {
         castShadow
         shadow-mapSize={2048}
       />
-      <pointLight position={[4, 0, 0]} intensity={7} color="softwhite" />
+      <pointLight position={[7, 0, 0]} intensity={10} color="softwhite" />
 
       <primitive
         object={computer.scene}
-        scale={isMobile ? 2.4 : 3.5}
+        scale={isMobile ? 8 : 10}
         position={isMobile ? [0, 0, 0] : [0, 0, 0]}
         rotation={[0, 0, 0]}
       />
@@ -67,7 +67,6 @@ const HeadScene = () => {
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-          
         />
         <Head isMobile={isMobile} />
       </Suspense>

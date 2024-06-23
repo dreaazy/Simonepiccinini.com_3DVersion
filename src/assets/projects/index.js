@@ -6,6 +6,10 @@ import la_bellezza_che_cura from "./la_bellezza_che_cura.jpg";
 import la_bellezza_che_cura_mobile from "./la_bellezza_che_cura_mobile.jpg";
 import wechat from "./wechat.jpg";
 import thumbnail_wechat from "./thumbnail_wechat.jpg";
+import thumbnail_campionatoEnglish from "./thumbnailcamponatoenglish.png";
+import campionatoEnglish from "./englishproject.png";
+import webchat1 from "./webchat1.png";
+import webchat2 from "./webchat2.png";
 
 
 import {od_ipynb, od_md, video_dim, image_dim, od_cover, thumbnail_od_cover} from "./object_detection";
@@ -18,6 +22,11 @@ export {
     od_md,
     video_dim,
     image_dim,
+    thumbnail_campionatoEnglish,
+    campionatoEnglish,
+
+    webchat1,
+    webchat2,
 
 
     english4u,
